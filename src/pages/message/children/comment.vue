@@ -4,16 +4,16 @@
       <li class="message-item">
         <a class="user-avatar">
           <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/UrqunCaV.jpg" />
         </a>
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>这是名词</a>
+              <a class>名字</a>
             </div>
-            <div class="interaction-hint"><span>评论了您的笔记&nbsp;</span><span>2021-10-9</span></div>
+            <div class="interaction-hint"><span>评论了您的笔记&nbsp;</span><span>2023-10-9</span></div>
             <div class="interaction-content">
-              <span>这是具体内容</span>
+              <span>具体内容</span>
             </div>
             <div class="action">
               <div class="action-reply">
@@ -26,25 +26,24 @@
             </div>
           </div>
           <div class="extra">
-            <img class="extra-image" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+            <img class="extra-image" src="https://img2.imgtp.com/2024/05/04/mdm1Npos.jpg" />
           </div>
         </div>
       </li>
       <li class="message-item">
         <a class="user-avatar">
           <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/UrqunCaV.jpg" />
         </a>
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>这是名词</a>
+              <a class>名字</a>
             </div>
-            <div class="interaction-hint"><span>评论了您的笔记&nbsp;</span><span>2021-10-9</span></div>
+            <div class="interaction-hint"><span>评论了您的笔记&nbsp;</span><span>2023-10-9</span></div>
             <div class="interaction-content">
-              <span>这是具体内容</span>
+              <span>具体内容</span>
             </div>
-            <div class="quote-info">确实是不行</div>
             <div class="action">
               <div class="action-reply">
                 <ChatRound style="width: 1.2em; height: 1.2em" />
@@ -56,46 +55,36 @@
             </div>
           </div>
           <div class="extra">
-            <img class="extra-image" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+            <img class="extra-image" src="https://img2.imgtp.com/2024/05/04/mdm1Npos.jpg" />
           </div>
         </div>
       </li>
       <li class="message-item">
         <a class="user-avatar">
           <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/UrqunCaV.jpg" />
         </a>
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>这是名词</a>
+              <a class>名字</a>
             </div>
-            <div class="interaction-hint"><span>评论了您的笔记&nbsp;</span><span>2021-10-9</span></div>
+            <div class="interaction-hint"><span>评论了您的笔记&nbsp;</span><span>2023-10-9</span></div>
             <div class="interaction-content">
-              <span>这是具体内容</span>
+              <span>具体内容</span>
             </div>
             <div class="action">
-              <div class="comment-wrapper action-comment">
-                <div class="input-wrapper">
-                  <textarea
-                    rows="1"
-                    class="comment-input"
-                    type="text"
-                    placeholder="回复 你好"
-                    style="height: 40px"
-                  ></textarea>
-                  <div class="input-buttons">
-                    <Star style="width: 1.2em; height: 1.2em; margin: 0 6px" />
-                    <Star style="width: 1.2em; height: 1.2em; margin: 0 6px" />
-                  </div>
-                </div>
-                <button class="submit">发送</button>
+              <div class="action-reply">
+                <ChatRound style="width: 1.2em; height: 1.2em" />
+                <div class="action-text">回复</div>
               </div>
-              <div class="action-cancel">取消</div>
+              <div class="action-like">
+                <Star style="width: 1.2em; height: 1.2em" />
+              </div>
             </div>
           </div>
           <div class="extra">
-            <img class="extra-image" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+            <img class="extra-image" src="https://img2.imgtp.com/2024/05/04/mdm1Npos.jpg" />
           </div>
         </div>
       </li>
