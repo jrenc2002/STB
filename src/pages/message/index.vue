@@ -6,6 +6,7 @@
           <div :class="[active==0?'active':'','reds-tab-item  tab-item']">
             <div class="badge-container"  @click="toMessage()">
               <span>我的消息</span>
+<!--              -->
             </div>
           </div>
           <div :class="[active==1?'active':'','reds-tab-item  tab-item']">
