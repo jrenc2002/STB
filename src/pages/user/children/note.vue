@@ -1,7 +1,8 @@
 <template>
   <div class="feeds-container">
     <Waterfall :list="list" :width="220" :hasAroundGutter="false" style="max-width: 1260px">
-      <template #item="{ item, url, index }">
+      
+      <template #item="{ url }">
         <div class="card">
           <LazyImg :url="url" style="border-radius: 8px" />
           <div class="footer">
@@ -23,7 +24,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-// import { Star } from "@element-plus/icons-vue";
+
 import { Search } from "@element-plus/icons-vue";
 import { LazyImg, Waterfall } from "vue-waterfall-plugin-next";
 import "vue-waterfall-plugin-next/dist/style.css";

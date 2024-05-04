@@ -18,12 +18,9 @@
                     <li v-for="file in files" :key="file.source" class="relative">
                         <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
                             <img :src="file.source" alt="" class="pointer-events-none object-cover group-hover:opacity-75" />
-                            <button type="button" class="absolute inset-0 focus:outline-none">
-                                <span class="sr-only">View details for {{ file.title }}</span>
-                            </button>
+              
                         </div>
-                        <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">{{ file.title }}</p>
-                        <p class="pointer-events-none block text-sm font-medium text-gray-500">{{ file.size }}</p>
+                       
                     </li>
                 </ul>
             </div>
@@ -53,12 +50,8 @@
                       <li v-for="file in files" :key="file.source" class="relative">
                           <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
                               <img :src="file.source" alt="" class="pointer-events-none object-cover group-hover:opacity-75" />
-                              <button type="button" class="absolute inset-0 focus:outline-none">
-                                  <span class="sr-only">View details for {{ file.title }}</span>
-                              </button>
+                           
                           </div>
-                          <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">{{ file.title }}</p>
-                          <p class="pointer-events-none block text-sm font-medium text-gray-500">{{ file.size }}</p>
                       </li>
                   </ul>
               </div>
@@ -136,11 +129,18 @@ const files = [
   max-width: 840px;
   margin: 0 auto;
 }
+.trend-container{
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 .container .trend-container .trend-item {
   display: flex;
   flex-direction: row;
   padding-top: 24px;
-  max-width: 100vw;
+    max-width: 840px;
 }
 .container .trend-container .trend-item .user-avatar {
   margin-right: 24px;

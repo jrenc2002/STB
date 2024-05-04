@@ -67,7 +67,7 @@
                     <form onsubmit="return false">
                         <label class="phone"
                         ><span class="country-code">+86</span
-                        ><input autofocus="" name="blur" placeholder="输入手机号" type="text"/>
+                        ><input name="blur" placeholder="输入手机号" type="text"/>
                             <svg
                                     class="reds-icon clear"
                                     fill="#xhs-pc-web-phone"

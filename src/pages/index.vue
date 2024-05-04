@@ -165,7 +165,6 @@
 import {
     ArrowRight,
     Bell,
-    CirclePlus,
     Close,
     House,
     Moon,
@@ -210,10 +209,7 @@ const toUser = () => {
     AppGlobal.pageChance = 4
     router.push({path: "/user"});
 };
-const toPush = () => {
-    AppGlobal.pageChance = 3
-    router.push({path: "/push"});
-};
+
 
 const close = (val: boolean) => {
     isLogin.value = val;
