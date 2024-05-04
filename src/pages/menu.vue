@@ -28,12 +28,7 @@
               消息</span
                             >
                         </li>
-                        <li  @click="toPush()" :class="[AppGlobal.pageChance==3?'active-channel text-blue-500':'','text-xl m-4']">
-                            <CirclePlus style="width: 1em; height: 1em; margin-right: 8px"/>
-                            <span class="channel">
-              发布</span
-                            >
-                        </li>
+                      
                         <li @click="toUser()" :class="[AppGlobal.pageChance==4?'active-channel text-blue-500':'','text-xl m-4']">
                             <User style="width: 1em; height: 1em; margin-right: 8px"/>
                             <span class="channel" >
@@ -63,31 +58,29 @@ const close = () => {
 const toDashboard = () => {
     AppGlobal.pageChance = 0
     router.push({path: "/"});
+    close()
 };
 
 const toTrend = () => {
     AppGlobal.pageChance = 1
     
     router.push({path: "/followTrend"});
+    close()
 };
 
 const toMessage = () => {
     AppGlobal.pageChance = 2
     router.push({path: "/message"});
+    close()
 };
-const updataMenu = () => {
-    console.log('updataMenu')
-    AppGlobal.isDrawerState = !AppGlobal.isDrawerState
-}
+
 
 const toUser = () => {
     AppGlobal.pageChance = 4
     router.push({path: "/user"});
+    close()
 };
-const toPush = () => {
-    AppGlobal.pageChance = 3
-    router.push({path: "/push"});
-};
+
 </script>
 
 <style lang="less" scoped>

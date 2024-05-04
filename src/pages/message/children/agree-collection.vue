@@ -51,7 +51,8 @@ textarea {
   overflow: auto;
 }
 .agree-container {
-  width: 40rem;
+   width: calc(90vw - 24px);
+  max-width: 840px;
   .agree-item {
     display: flex;
     flex-direction: row;

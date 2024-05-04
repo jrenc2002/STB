@@ -25,7 +25,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="right max-md:cursor-pointer md:hidden  " @click="updataMenu()" >
+                <div class="right max-[960px]:cursor-pointer min-[960px]:hidden  " @click="updataMenu()" >
                     <svg aria-hidden="true" fill="none" height="24" width="24">
                         <path d="M12 6v.01M12 12v.01M12 18v.01M12 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
                               stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -36,121 +36,120 @@
             </header>
         </div>
         <div class="main">
-            <div class="side-bar">
-                <ul class="channel-list">
-                    <li :class="AppGlobal.pageChance==0?'active-channel':''" @click="toDashboard()">
-                        <a class="link-wrapper ">
-                            <House style="width: 1em; height: 1em; margin-right: 8px"/>
-                            <span class="channel"
-                            >发现</span
-                            ></a
-                        >
-                    </li>
-                    <li :class="AppGlobal.pageChance==1?'active-channel':''" @click="toTrend()">
-                        <Star style="width: 1em; height: 1em; margin-right: 8px"/>
-                        <span class="channel" >
+            <Transition>
+    
+                <div class="side-bar">
+                    <ul class="channel-list">
+                        <li :class="AppGlobal.pageChance==0?'active-channel':''" @click="toDashboard()">
+                            <a class="link-wrapper ">
+                                <House style="width: 1em; height: 1em; margin-right: 8px"/>
+                                <span class="channel"
+                                >发现</span
+                                ></a
+                            >
+                        </li>
+                        <li :class="AppGlobal.pageChance==1?'active-channel':''" @click="toTrend()">
+                            <Star style="width: 1em; height: 1em; margin-right: 8px"/>
+                            <span class="channel" >
               动态</span
-                        >
-                    </li>
-                    <li :class="AppGlobal.pageChance==2?'active-channel':''" @click="toMessage()">
-                        <Bell style="width: 1em; height: 1em; margin-right: 8px"/>
-                        <span class="channel" >
+                            >
+                        </li>
+                        <li :class="AppGlobal.pageChance==2?'active-channel':''" @click="toMessage()">
+                            <Bell style="width: 1em; height: 1em; margin-right: 8px"/>
+                            <span class="channel" >
               消息</span
-                        >
-                    </li>
-                    <li :class="AppGlobal.pageChance==3?'active-channel':''" @click="toPush()">
-                        <CirclePlus style="width: 1em; height: 1em; margin-right: 8px"/>
-                        <span class="channel" >
-              发布</span
-                        >
-                    </li>
-                    <li :class="AppGlobal.pageChance==4?'active-channel ':''"  @click="toUser()">
-                        <User style="width: 1em; height: 1em; margin-right: 8px"/>
-                        <span class="channel">
+                            >
+                        </li>
+                       
+                        <li :class="AppGlobal.pageChance==4?'active-channel ':''"  @click="toUser()">
+                            <User style="width: 1em; height: 1em; margin-right: 8px"/>
+                            <span class="channel">
               个人</span
-                        >
-                    </li>
-                </ul>
-                
-                <div class="information-container ml-2">
-                    <Transition>
-                        <div v-if="isMore" class="information-pad  ">
-                            <div class="container">
-                                <div>
+                            >
+                        </li>
+                    </ul>
+        
+                    <div class="information-container ml-2">
+                        <Transition>
+                            <div v-if="isMore" class="information-pad  ">
+                                <div class="container">
                                     <div>
-                                        <div class="group-wrapper">
-                                            <div class="menu-item hover-effect">
-                                                <span>关于山小科</span>
-                                                <div class="icon">
-                                                    <ArrowRight style="width: 1em; height: 1em; margin-right: 8px"/>
+                                        <div>
+                                            <div class="group-wrapper">
+                                                <div class="menu-item hover-effect">
+                                                    <span>关于山小科</span>
+                                                    <div class="icon">
+                                                        <ArrowRight style="width: 1em; height: 1em; margin-right: 8px"/>
+                                                    </div>
+                                                </div>
+                                                <div class="menu-item hover-effect">
+                                                    <span>隐私，协议</span>
+                                                    <div class="icon">
+                                                        <ArrowRight style="width: 1em; height: 1em; margin-right: 8px"/>
+                                                    </div>
+                                                </div>
+                                                <div class="menu-item hover-effect">
+                                                    <span>帮助与客服</span>
                                                 </div>
                                             </div>
-                                            <div class="menu-item hover-effect">
-                                                <span>隐私，协议</span>
-                                                <div class="icon">
-                                                    <ArrowRight style="width: 1em; height: 1em; margin-right: 8px"/>
-                                                </div>
-                                            </div>
-                                            <div class="menu-item hover-effect">
-                                                <span>帮助与客服</span>
-                                            </div>
+                                            <div class="divider"></div>
                                         </div>
-                                        <div class="divider"></div>
-                                    </div>
-                                    <div>
-                                        <div class="group-wrapper">
-                                            <div class="group-header">访问方式</div>
-                                            <div class="menu-item hover-effect">
-                                                <span>键盘快捷键</span>
-                                                <div class="icon">
-                                                    <Search style="width: 1em; height: 1em; margin-right: 8px"/>
+                                        <div>
+                                            <div class="group-wrapper">
+                                                <div class="group-header">访问方式</div>
+                                                <div class="menu-item hover-effect">
+                                                    <span>键盘快捷键</span>
+                                                    <div class="icon">
+                                                        <Search style="width: 1em; height: 1em; margin-right: 8px"/>
+                                                    </div>
+                                                </div>
+                                                <div class="menu-item hover-effect">
+                                                    <span>添加山小科到桌面</span>
+                                                    <div class="icon">
+                                                        <ArrowRight style="width: 1em; height: 1em; margin-right: 8px"/>
+                                                    </div>
+                                                </div>
+                                                <div class="menu-item hover-effect">
+                                                    <span>小窗模式</span>
                                                 </div>
                                             </div>
-                                            <div class="menu-item hover-effect">
-                                                <span>添加山小科到桌面</span>
-                                                <div class="icon">
-                                                    <ArrowRight style="width: 1em; height: 1em; margin-right: 8px"/>
-                                                </div>
-                                            </div>
-                                            <div class="menu-item hover-effect">
-                                                <span>小窗模式</span>
-                                            </div>
+                                            <div class="divider"></div>
                                         </div>
-                                        <div class="divider"></div>
-                                    </div>
-                                    <div>
-                                        <div class="group-wrapper">
-                                            <div class="group-header">设置</div>
-                                            <div class="menu-item hover-effect">
-                                                <span>深色模式</span>
-                                                <div class="multistage-toggle component">
-                                                    <button class="toggle-item active">
-                                                        <div class="icon-wrapper">
-                                                            <Sunny style="width: 1em; height: 1em"/>
-                                                        </div>
-                                                    </button>
-                                                    <button class="toggle-item">
-                                                        <div class="icon-wrapper">
-                                                            <Moon style="width: 1em; height: 1em"/>
-                                                        </div>
-                                                    </button>
+                                        <div>
+                                            <div class="group-wrapper">
+                                                <div class="group-header">设置</div>
+                                                <div class="menu-item hover-effect">
+                                                    <span>深色模式</span>
+                                                    <div class="multistage-toggle component">
+                                                        <button class="toggle-item active">
+                                                            <div class="icon-wrapper">
+                                                                <Sunny style="width: 1em; height: 1em"/>
+                                                            </div>
+                                                        </button>
+                                                        <button class="toggle-item">
+                                                            <div class="icon-wrapper">
+                                                                <Moon style="width: 1em; height: 1em"/>
+                                                            </div>
+                                                        </button>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="menu-item hover-effect">
-                                                <span>退出登录</span>
+                                                <div class="menu-item hover-effect">
+                                                    <span>退出登录</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </Transition>
+                        <div class="information-wrapper " @click="isMore=!isMore;">
+                            <More style="width: 1em; height: 1em; margin-right: 8px"/>
+                            <span class="channel ml-1"> 更多</span>
                         </div>
-                    </Transition>
-                    <div class="information-wrapper " @click="isMore=!isMore;">
-                        <More style="width: 1em; height: 1em; margin-right: 8px"/>
-                        <span class="channel ml-1"> 更多</span>
                     </div>
                 </div>
-            </div>
+            </Transition>
+      
             <div class="main-content with-side-bar">
                 <router-view/>
             </div>
@@ -345,6 +344,7 @@ const close = (val: boolean) => {
   margin-top: 72px;
   position: fixed;
   overflow: visible;
+  transition-property: all;
 }
 
 @media screen and (max-width: 695px) {

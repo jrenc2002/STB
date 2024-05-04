@@ -110,7 +110,7 @@ textarea {
   overflow: auto;
 }
 .message-container {
-  width: 40rem;
+  max-width: 840px;
   .message-item {
     display: flex;
     flex-direction: row;
