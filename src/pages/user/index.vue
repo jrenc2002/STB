@@ -1,7 +1,7 @@
 <template>
   <div class="user-page">
     <div class="user">
-      <div class="user-info max-md:flex max-md:flex-col">
+      <div class="user-info max-md:flex max-md:flex-col max-md:w-[80vw]">
         <div class="avatar flex center justify-center item-center mb-3">
           <div class="avatar-wrapper">
             <img
@@ -19,7 +19,7 @@
                   <div class="user-name my-2 text-2xl">写代码写的</div>
                 </div>
                 <div class="user-content  ">
-                  <span class="user-redId text-sm">山小科号：862055705</span><span class="user-IP text-sm"> IP属地：山东</span>
+                  <span class="user-redId text-sm">小科号：862055705</span><span class="user-IP text-sm"> IP属地：山东</span>
                 </div>
               </div>
             </div>
@@ -251,7 +251,7 @@ const toAgree = () => {
   z-index: 1;
 }
 .user-page .reds-sticky .reds-tabs-list .reds-tab-item.active {
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(144, 178, 217, 0.15);
   border-radius: 20px;
   font-weight: 600;
   color: rgba(51, 51, 51, 0.8);

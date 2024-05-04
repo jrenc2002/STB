@@ -11,7 +11,7 @@
             <div class="user-info">
               <a class>名字</a>
             </div>
-            <div class="interaction-hint"><span>开始关注您了&nbsp;</span><span>2023-10-9</span></div>
+            <div class="interaction-hint"><span>关注您了&nbsp;</span><span>2023-10-9</span></div>
           </div>
           <div class="extra">
             <button aria-disabled="false" type="button" class="bg-[#2A82E4] w-24 h-10 text-white rounded-full" >
@@ -30,7 +30,7 @@
             <div class="user-info">
               <a class>名字</a>
             </div>
-            <div class="interaction-hint"><span>开始关注您了&nbsp;</span><span>2023-10-9</span></div>
+            <div class="interaction-hint"><span>关注您了&nbsp;</span><span>2023-10-9</span></div>
           </div>
           <div class="extra">
             <button aria-disabled="false" type="button" class="bg-[#2A82E4] w-24 h-10 text-white rounded-full" >
@@ -49,7 +49,7 @@
             <div class="user-info">
               <a class>名字</a>
             </div>
-            <div class="interaction-hint"><span>开始关注您了&nbsp;</span><span>2023-10-9</span></div>
+            <div class="interaction-hint"><span>关注您了&nbsp;</span><span>2023-10-9</span></div>
           </div>
           <div class="extra">
             <button aria-disabled="false" type="button" class="bg-[#2A82E4] w-24 h-10 text-white rounded-full" >

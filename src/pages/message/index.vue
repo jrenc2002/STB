@@ -85,7 +85,7 @@ const toFollower = () => {
 .container .reds-sticky .reds-tabs-list .active {
   font-weight: 600;
   color: #333;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(144, 178, 217, 0.15);
   border-radius: 20px;
 }
 .container .reds-sticky .reds-tabs-list .reds-tab-item {
@@ -104,6 +104,8 @@ const toFollower = () => {
 }
 .container .reds-sticky .reds-tabs-list .reds-tab-item .badge-container {
   position: relative;
+  font-size: 0.8rem;
+  
 }
 .container .reds-sticky .divider {
 

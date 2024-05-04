@@ -2,16 +2,15 @@
   <div class="feeds-container">
     <Waterfall :list="list" :width="220" :hasAroundGutter="false" style="max-width: 1260px">
       
-      <template #item="{ url }">
+      <template #item="{ url,index }">
         <div class="card">
           <LazyImg :url="url" style="border-radius: 8px" />
           <div class="footer">
-            <a class="title"><span>这是具体内容</span></a>
+            <a class="title"><span>{{sentences[index]}}</span></a>
+            
+            
             <div class="author-wrapper">
-              <a class="author">
-                <img class="author-avatar" :src="url" />
-                <span class="name">这是名字</span>
-              </a>
+          
               <span class="like-wrapper like-active">
                 <Search style="width: 1em; height: 1em" />
                 <span class="count">12</span>
@@ -29,30 +28,62 @@ import { Search } from "@element-plus/icons-vue";
 import { LazyImg, Waterfall } from "vue-waterfall-plugin-next";
 import "vue-waterfall-plugin-next/dist/style.css";
 import { ref } from "vue";
+
 const list = ref([
-  { src: "https://tse1-mm.cn.bing.net/th/id/OIP-C.Zte3ljd4g6kqrWWyg-8fhAHaEo?w=264&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse1-mm.cn.bing.net/th/id/OIP-C.cGc4c8dVlqnfV3uwcS1IogHaE8?w=260&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse1-mm.cn.bing.net/th/id/OIP-C.Zte3ljd4g6kqrWWyg-8fhAHaEo?w=264&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse4-mm.cn.bing.net/th/id/OIP-C.N0USLldg_iKDGVKT12vB4AHaEK?w=292&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse1-mm.cn.bing.net/th/id/OIP-C.jzcWzXf_uts2sgE2WChuCQHaEo?w=263&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse1-mm.cn.bing.net/th/id/OIP-C.Zte3ljd4g6kqrWWyg-8fhAHaEo?w=264&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" },
-  { src: "https://fuss10.elemecdn.com/1/34/19aa98b1fcb2781c4fba33d850549jpeg.jpeg" },
-  { src: "https://fuss10.elemecdn.com/d/e6/c4d93a3805b3ce3f323f7974e6f78jpeg.jpeg" },
-  { src: "https://fuss10.elemecdn.com/0/6f/e35ff375812e6b0020b6b4e8f9583jpeg.jpeg" },
-  { src: "https://fuss10.elemecdn.com/9/bb/e27858e973f5d7d3904835f46abbdjpeg.jpeg" },
-  { src: "https://fuss10.elemecdn.com/3/28/bbf893f792f03a54408b3b7a7ebf0jpeg.jpeg" },
-  { src: "https://fuss10.elemecdn.com/2/11/6535bcfb26e4c79b48ddde44f4b6fjpeg.jpeg" },
-  { src: "https://tse4-mm.cn.bing.net/th/id/OIP-C.N0USLldg_iKDGVKT12vB4AHaEK?w=292&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse1-mm.cn.bing.net/th/id/OIP-C.jzcWzXf_uts2sgE2WChuCQHaEo?w=263&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse3-mm.cn.bing.net/th/id/OIP-C.YzEeJqgWky6RQMatrMd6-gHaHa?w=170&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse3-mm.cn.bing.net/th/id/OIP-C.YzEeJqgWky6RQMatrMd6-gHaHa?w=170&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse1-mm.cn.bing.net/th/id/OIP-C.Zte3ljd4g6kqrWWyg-8fhAHaEo?w=264&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse4-mm.cn.bing.net/th/id/OIP-C.N0USLldg_iKDGVKT12vB4AHaEK?w=292&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse1-mm.cn.bing.net/th/id/OIP-C.jzcWzXf_uts2sgE2WChuCQHaEo?w=263&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse1-mm.cn.bing.net/th/id/OIP-C.Zte3ljd4g6kqrWWyg-8fhAHaEo?w=264&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse1-mm.cn.bing.net/th/id/OIP-C.cGc4c8dVlqnfV3uwcS1IogHaE8?w=260&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
+    {src: "../../src/assets/imgs/图片9.jpg"},
+    {src: "../../src/assets/imgs/图片8.jpg"},
+    {src: "../../src/assets/imgs/图片10.jpg"},
+    {src: "../../src/assets/imgs/图片11.jpg"},
+    {src: "../../src/assets/imgs/图片12.jpg"},
+    {src: "../../src/assets/imgs/图片13.png"},
+    {src: "../../src/assets/imgs/图片14.jpg"},
+    {src: "../../src/assets/imgs/图片14.jpg"},
+    {src: "../../src/assets/imgs/图片15.png"},
+    {src: "../../src/assets/imgs/图片16.png"},
+    {src: "../../src/assets/imgs/图片17.png"},
+    {src: "../../src/assets/imgs/图片18.jpg"},
+    {src: "../../src/assets/imgs/图片19.png"},
+    {src: "../../src/assets/imgs/图片20.jpg"},
+    {src: "../../src/assets/imgs/图片21.png"},
+    {src: "../../src/assets/imgs/e4a16ff3-ba21-47bb-aa80-80ca98e89c3b.webp"},
+    {src: "../../src/assets/imgs/b_55b6379d2a7e8227de40159de11311c8.jpg"},
+    {src: "../../src/assets/imgs/IMG_2090(20240315-013315).JPG"},
+    {src: "../../src/assets/imgs/IMG_2089(20240315-013312).JPG"},
+    {src: "../../src/assets/imgs/IMG_2092(20240315-013319).JPG"},
 ]);
+const sentences = [
+    "她拥有温暖如春的笑容。",
+    "她的眼眸如星辰般闪耀。",
+    "她的秀发如瀑布般柔顺。",
+    "她的声音宛如天籁之音。",
+    "她的身姿优雅如白鹤翩翩起舞。",
+    "她的微笑能融化所有人的心。",
+    "她的双眸仿佛藏着无尽的故事。",
+    "她的肌肤如白玉般晶莹剔透。",
+    "她的智慧与美貌兼具。",
+    "她的气质优雅迷人。",
+    "她的身姿曼妙如柳枝轻扬。",
+    "她的眼睛仿佛会说话。",
+    "她的容颜如初春的花朵般美丽。",
+    "她的微笑如阳光般灿烂。",
+    "她的面容如一幅绝美的画作。",
+    "她的嗓音宛若夜莺歌唱。",
+    "她的气质高贵如兰花。",
+    "她的举止优雅大方。",
+    "她的笑容如明月般皎洁。",
+    "她的发丝轻柔如风。",
+    "她的目光温柔而坚定。",
+    "她的脸庞如瓷器般精致。",
+    "她的睫毛如蝶翼轻颤。",
+    "她的嘴角微扬，魅力十足。",
+    "她的灵魂如阳光般纯净。",
+    "她的双颊泛起红润的光泽。",
+    "她的美貌令人无法移开目光。",
+    "她的存在如同晨曦般令人愉悦。",
+    "她的举手投足充满优雅。",
+    "她的身影让人无法忘怀。"
+];
+
 </script>
 <style lang="less" scoped>
 .feeds-container {

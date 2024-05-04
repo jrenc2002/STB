@@ -57,7 +57,7 @@
                     <svg class="reds-icon play" height="11" width="11">
                         <use xlink:href="#play"></use>
                     </svg>
-                    教程
+                 
                 </div>
             </div>
             <div class="right">
@@ -65,7 +65,7 @@
                 <!---->
                 <div class="input-container">
                     <form onsubmit="return false">
-                        <label class="phone"
+                        <label class="phone" style="border: #2a82e4 solid 1px"
                         ><span class="country-code">+86</span
                         ><input name="blur" placeholder="输入手机号" type="text"/>
                             <svg
@@ -79,41 +79,20 @@
                             </svg
                             >
                         </label>
-                        <div style="height: 16px"></div>
-                        <label class="auth-code"
+                        <div style="height: 16px ;"></div>
+                        <label class="auth-code" style="border: #2a82e4 solid 1px"
                         ><input autocomplete="false" placeholder="输入验证码" type="text"/><span class="code-button"
                         >获取验证码</span
                         ></label
                         >
                         <div class="err-msg"></div>
-                        <button class="submit">登录</button>
+                        <button class="submit ">登录</button>
                     </form>
                 </div>
-                <div class="agreements">
-                    <span class="agree-icon"></span>
-                    <label> 我已阅读并同意</label
-                    ><a class="links" href="https://agree.xiaohongshu.com/h5/terms/ZXXY20220331001/-1" target="_blank"
-                >《用户协议》</a
-                ><a class="links" href="https://agree.xiaohongshu.com/h5/terms/ZXXY20220509001/-1" target="_blank"
-                >《隐私政策》</a
-                ><br/><a
-                        class="links"
-                        href="https://oa.xiaohongshu.com/h5/terms/ZXXY20220516001/-1"
-                        style="margin-left: 25px"
-                        target="_blank"
-                >《儿童/青少年个人信息保护规则》</a
-                >
-                </div>
+           
                 <div class="oauth-tip"><span class="oauth-tip-line">或</span></div>
                 <div class="login">
-                    <div class="login-common wechat">
-                        <svg class="reds-icon" height="18" style="margin-right: 4px" width="18">
-                            <use xlink:href="#wechat"></use>
-                        </svg
-                        >
-                        微信登录
-                    </div>
-                    <div class="login-common reg">新用户注册</div>
+                    <div class="login-common reg">用户注册</div>
                 </div>
             </div>
         </div>
@@ -292,6 +271,7 @@ a {
         color: rgba(51, 51, 51, 0.8);
         font-weight: 600;
         line-height: 120%;
+        
       }
 
       .input-container {
@@ -371,15 +351,18 @@ a {
         .submit {
           margin-top: 24px;
           height: 48px;
-          background: rgb(42, 130, 228);
+          background: rgb(101, 146, 196);
           color: #fff;
-          opacity: 0.5;
           border-radius: 999px;
           font-size: 16px;
           font-weight: 600;
           cursor: pointer;
           transition: all 0.2s;
           width: 100%;
+        }
+
+        .submit:hover {
+          background-color: #2a82e4;
         }
 
         form {

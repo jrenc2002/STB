@@ -1,87 +1,90 @@
 <template>
-  <div class="feeds-page ">
-    <div class="channel-container">
-      <div class="scroll-container channel-scroll-container">
-        <div class="content-container">
-          <div class="channel active">推荐</div>
-          <div class="channel ">穿搭</div>
-          <div class="channel">美食</div>
-          <div class="channel">彩妆</div>
-          <div class="channel ">影视</div>
-          <div class="channel">职场</div>
-          <div class="channel">情感</div>
-          <div class="channel">家居</div>
-          <div class="channel">游戏</div>
-          <div class="channel">旅行</div>
-          <div class="channel">动漫</div>
-          <div class="channel">健身</div>
-        </div>
-      </div>
-    </div>
-    <div class="loading-container"></div>
-    <div class="feeds-container">
-      <Waterfall :list="list" :width="240" :hasAroundGutter="false" style="max-width: 1260px">
-          <template #item="{  url }">
-          <div class="card">
-            <LazyImg :url="url" style="border-radius: 8px" @click="toMain" />
-            <div class="footer">
-              <a class="title"><span>标题</span></a>
-              <div class="author-wrapper">
-                <a class="author">
-                  <img class="author-avatar" :src="url" />
-                  <span class="name">名字</span>
-                </a>
-                <span class="like-wrapper like-active">
-                  <Search style="width: 1em; height: 1em" />
-                  <span class="count">12</span>
-                </span>
-              </div>
+    <div class="feeds-page ">
+        <div class="channel-container">
+            <div class="scroll-container channel-scroll-container">
+                <div class="content-container">
+                    <div class="channel active">推荐</div>
+                    <div class="channel ">山科日常</div>
+                    <div class="channel">美食</div>
+                    <div class="channel">考试</div>
+                    <div class="channel ">吃瓜</div>
+                    <div class="channel">恋爱</div>
+                </div>
             </div>
-          </div>
-        </template>
-      </Waterfall>
+        </div>
+        <div class="loading-container"></div>
+        <div class="feeds-container">
+            <Waterfall :hasAroundGutter="false" :list="list" :width="240" style="max-width: 1260px">
+                <template #item="{  url,index }">
+                    <div class="card">
+                        <LazyImg :url="url" style="border-radius: 8px"/>
+                        <div class="footer">
+                            <a class="title"><span>{{titles[index]}}</span></a>
+                            <div class="author-wrapper">
+                                <a class="author">
+                                    <img :src="url" class="author-avatar"/>
+                                    <span class="name">{{  usernames[index]}}</span>
+                                </a>
+                                <span class="like-wrapper like-active">
+                  <Search style="width: 1em; height: 1em"/>
+                  <span class="count">{{Math.floor(Math.random(index)*10)}}</span>
+                </span>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </Waterfall>
+        </div>
+        <div class="feeds-loading"></div>
     </div>
-    <div class="feeds-loading"></div>
-  </div>
 </template>
 <script lang="ts" setup>
-import { Search } from "@element-plus/icons-vue";
-import { LazyImg, Waterfall } from "vue-waterfall-plugin-next";
+import {Search} from "@element-plus/icons-vue";
+import {LazyImg, Waterfall} from "vue-waterfall-plugin-next";
 import "vue-waterfall-plugin-next/dist/style.css";
-import { useRouter } from "vue-router";
 
-import { ref } from "vue";
+import {ref} from "vue";
 
-const router = useRouter();
 
 const list = ref([
-  { src: "https://tse1-mm.cn.bing.net/th/id/OIP-C.Zte3ljd4g6kqrWWyg-8fhAHaEo?w=264&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse1-mm.cn.bing.net/th/id/OIP-C.cGc4c8dVlqnfV3uwcS1IogHaE8?w=260&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse1-mm.cn.bing.net/th/id/OIP-C.Zte3ljd4g6kqrWWyg-8fhAHaEo?w=264&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse4-mm.cn.bing.net/th/id/OIP-C.N0USLldg_iKDGVKT12vB4AHaEK?w=292&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse1-mm.cn.bing.net/th/id/OIP-C.jzcWzXf_uts2sgE2WChuCQHaEo?w=263&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse1-mm.cn.bing.net/th/id/OIP-C.Zte3ljd4g6kqrWWyg-8fhAHaEo?w=264&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" },
-  { src: "https://fuss10.elemecdn.com/1/34/19aa98b1fcb2781c4fba33d850549jpeg.jpeg" },
-  { src: "https://fuss10.elemecdn.com/d/e6/c4d93a3805b3ce3f323f7974e6f78jpeg.jpeg" },
-  { src: "https://fuss10.elemecdn.com/0/6f/e35ff375812e6b0020b6b4e8f9583jpeg.jpeg" },
-  { src: "https://fuss10.elemecdn.com/9/bb/e27858e973f5d7d3904835f46abbdjpeg.jpeg" },
-  { src: "https://fuss10.elemecdn.com/3/28/bbf893f792f03a54408b3b7a7ebf0jpeg.jpeg" },
-  { src: "https://fuss10.elemecdn.com/2/11/6535bcfb26e4c79b48ddde44f4b6fjpeg.jpeg" },
-  { src: "https://tse4-mm.cn.bing.net/th/id/OIP-C.N0USLldg_iKDGVKT12vB4AHaEK?w=292&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse1-mm.cn.bing.net/th/id/OIP-C.jzcWzXf_uts2sgE2WChuCQHaEo?w=263&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse3-mm.cn.bing.net/th/id/OIP-C.YzEeJqgWky6RQMatrMd6-gHaHa?w=170&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse3-mm.cn.bing.net/th/id/OIP-C.YzEeJqgWky6RQMatrMd6-gHaHa?w=170&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse1-mm.cn.bing.net/th/id/OIP-C.Zte3ljd4g6kqrWWyg-8fhAHaEo?w=264&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse4-mm.cn.bing.net/th/id/OIP-C.N0USLldg_iKDGVKT12vB4AHaEK?w=292&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse1-mm.cn.bing.net/th/id/OIP-C.jzcWzXf_uts2sgE2WChuCQHaEo?w=263&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse1-mm.cn.bing.net/th/id/OIP-C.Zte3ljd4g6kqrWWyg-8fhAHaEo?w=264&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-  { src: "https://tse1-mm.cn.bing.net/th/id/OIP-C.cGc4c8dVlqnfV3uwcS1IogHaE8?w=260&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
-]);
 
-const toMain = () => {
-  router.push({ path: "/main" });
-};
+    {src: "../../src/assets/imgs/图片9.jpg"},
+    {src: "../../src/assets/imgs/图片8.jpg"},
+    {src: "../../src/assets/imgs/图片10.jpg"},
+    {src: "../../src/assets/imgs/图片11.jpg"},
+    {src: "../../src/assets/imgs/图片12.jpg"},
+    {src: "../../src/assets/imgs/图片13.png"},
+    {src: "../../src/assets/imgs/图片14.jpg"},
+    {src: "../../src/assets/imgs/图片14.jpg"},
+    {src: "../../src/assets/imgs/图片15.png"},
+    {src: "../../src/assets/imgs/图片16.png"},
+    {src: "../../src/assets/imgs/图片17.png"},
+    {src: "../../src/assets/imgs/图片18.jpg"},
+    {src: "../../src/assets/imgs/图片19.png"},
+    {src: "../../src/assets/imgs/图片20.jpg"},
+    {src: "../../src/assets/imgs/图片21.png"},
+    {src: "../../src/assets/imgs/e4a16ff3-ba21-47bb-aa80-80ca98e89c3b.webp"},
+    {src: "../../src/assets/imgs/b_55b6379d2a7e8227de40159de11311c8.jpg"},
+    {src: "../../src/assets/imgs/IMG_2090(20240315-013315).JPG"},
+    {src: "../../src/assets/imgs/IMG_2089(20240315-013312).JPG"},
+    {src: "../../src/assets/imgs/IMG_2092(20240315-013319).JPG"},
+]);
+const titles = [
+    "开创未来的科技", "探索宇宙的奥秘", "创新与挑战", "智能时代的生活", "数字化转型", "可持续发展",
+    "新媒体艺术", "创业与机遇", "全球贸易新趋势", "虚拟现实的未来",
+    "无人驾驶与自动化", "绿色能源革命", "区块链技术应用", "人工智能与医疗", "网络安全与隐私",
+    "机器人技术进展", "深度学习与大数据", "社交媒体的力量", "未来教育模式", "太空探索的愿景",
+    "量子计算时代", "智能家居的崛起", "生物技术与健康", "新材料革命", "5G与物联网",
+    "个性化数字营销", "城市规划与智慧城市", "金融科技创新", "可穿戴设备与健康监测", "新一代通信技术"
+];
+
+const usernames = [
+    "孤影残月", "风中追风", "月下听风", "清风明月", "流年似水", "梦里花落", "夜色如墨", "星辰大海",
+    "海天一色", "醉卧红尘", "云端漫步", "落花无情", "寒江独钓", "浅笑安然", "潇洒走一回", "花开彼岸",
+    "一世浮生", "烟雨迷离", "天涯海角", "静谧之夜", "尘世之旅", "寻梦者", "日月同辉", "风华绝代",
+    "沧海一粟", "日落黄昏", "轻舞飞扬", "晨曦微露", "锦绣年华", "飞扬的风筝"
+];
+
 </script>
 <style lang="less" scoped>
 .feeds-page {
@@ -152,6 +155,7 @@ const toMain = () => {
 
     .footer {
       padding: 12px;
+
       .title {
         margin-bottom: 8px;
         word-break: break-all;

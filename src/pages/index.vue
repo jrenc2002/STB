@@ -2,7 +2,7 @@
     <div class="container ">
         <div class="top">
             <header class="mask-paper">
-                <a class="w-[10rem] " style="display: flex;">
+                <a class="w-[10rem] ml-4 " style="display: flex;">
                     <svg fill="none" height="46" viewBox="0 0 117.103515625 46.56005859375"
                          width="80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g>
@@ -15,7 +15,7 @@
                 
                 <div class="tool-box"></div>
                 <div class="input-box">
-                    <input class="search-input" placeholder="搜索山小科" type="text"/>
+                    <input class="search-input" placeholder="探索山小科" type="text"/>
                     <div class="input-button">
                         <div class="close-icon">
                             <Close style="width: 1em; height: 1em; margin-right: 8px"/>
@@ -25,7 +25,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="right max-[960px]:cursor-pointer min-[960px]:hidden  " @click="updataMenu()" >
+                <div class="right max-[960px]:cursor-pointer min-[960px]:hidden  " @click="updataMenu()">
                     <svg aria-hidden="true" fill="none" height="24" width="24">
                         <path d="M12 6v.01M12 12v.01M12 18v.01M12 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
                               stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -37,38 +37,82 @@
         </div>
         <div class="main">
             <Transition>
-    
+                
                 <div class="side-bar">
                     <ul class="channel-list">
                         <li :class="AppGlobal.pageChance==0?'active-channel':''" @click="toDashboard()">
                             <a class="link-wrapper ">
-                                <House style="width: 1em; height: 1em; margin-right: 8px"/>
+                                <svg fill="none" height="48" style="width: 1em; height: 1em; margin-right: 8px"
+                                     viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 6H8C6.89543 6 6 6.89543 6 8V18C6 19.1046 6.89543 20 8 20H18C19.1046 20 20 19.1046 20 18V8C20 6.89543 19.1046 6 18 6Z"
+                                          fill="none" stroke="#333" stroke-linejoin="bevel" stroke-width="3"/>
+                                    <path d="M18 28H8C6.89543 28 6 28.8954 6 30V40C6 41.1046 6.89543 42 8 42H18C19.1046 42 20 41.1046 20 40V30C20 28.8954 19.1046 28 18 28Z"
+                                          fill="none" stroke="#333" stroke-linejoin="bevel" stroke-width="3"/>
+                                    <path d="M40 6H30C28.8954 6 28 6.89543 28 8V18C28 19.1046 28.8954 20 30 20H40C41.1046 20 42 19.1046 42 18V8C42 6.89543 41.1046 6 40 6Z"
+                                          fill="none" stroke="#333" stroke-linejoin="bevel" stroke-width="3"/>
+                                    <path d="M40 28H30C28.8954 28 28 28.8954 28 30V40C28 41.1046 28.8954 42 30 42H40C41.1046 42 42 41.1046 42 40V30C42 28.8954 41.1046 28 40 28Z"
+                                          fill="none" stroke="#333" stroke-linejoin="bevel" stroke-width="3"/>
+                                </svg>
                                 <span class="channel"
                                 >发现</span
                                 ></a
                             >
                         </li>
                         <li :class="AppGlobal.pageChance==1?'active-channel':''" @click="toTrend()">
-                            <Star style="width: 1em; height: 1em; margin-right: 8px"/>
-                            <span class="channel" >
+                            
+                            <svg fill="none" height="48" style="width: 1em; height: 1em; margin-right: 8px"
+                                 viewBox="0 0 48 48"
+                                 width="48"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M44 7H4V37H11V42L21 37H44V7Z" fill="none" stroke="#333" stroke-linecap="round"
+                                      stroke-linejoin="bevel" stroke-width="3"/>
+                                <path d="M31 16V17" stroke="#333" stroke-linecap="round" stroke-linejoin="bevel"
+                                      stroke-width="3"/>
+                                <path d="M17 16V17" stroke="#333" stroke-linecap="round" stroke-linejoin="bevel"
+                                      stroke-width="3"/>
+                                <path d="M31 25C31 25 29 29 24 29C19 29 17 25 17 25" stroke="#333"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="bevel" stroke-width="3"/>
+                            </svg>
+                            <span class="channel">
               动态</span
                             >
                         </li>
                         <li :class="AppGlobal.pageChance==2?'active-channel':''" @click="toMessage()">
-                            <Bell style="width: 1em; height: 1em; margin-right: 8px"/>
-                            <span class="channel" >
+                            
+                            <svg fill="none" height="48" style="width: 1em; height: 1em; margin-right: 8px"
+                                 viewBox="0 0 48 48"
+                                 width="48"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 6H44V36H29L24 41L19 36H4V6Z" fill="none" stroke="#333"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="bevel" stroke-width="3"/>
+                                <path d="M23 21H25.0025" stroke="#333" stroke-linecap="round" stroke-width="3"/>
+                                <path d="M33.001 21H34.9999" stroke="#333" stroke-linecap="round" stroke-width="3"/>
+                                <path d="M13.001 21H14.9999" stroke="#333" stroke-linecap="round" stroke-width="3"/>
+                            </svg>
+                            <span class="channel">
               消息</span
                             >
                         </li>
-                       
-                        <li :class="AppGlobal.pageChance==4?'active-channel ':''"  @click="toUser()">
-                            <User style="width: 1em; height: 1em; margin-right: 8px"/>
+                        
+                        <li :class="AppGlobal.pageChance==4?'active-channel ':''" @click="toUser()">
+                           
+                            <svg fill="none" height="48" viewBox="0 0 48 48" width="48" style="width: 1em; height: 1em; margin-right: 8px"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 20C27.866 20 31 16.866 31 13C31 9.13401 27.866 6 24 6C20.134 6 17 9.13401 17 13C17 16.866 20.134 20 24 20Z"
+                                      fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="bevel"
+                                      stroke-width="3"/>
+                                <path d="M6 40.8V42H42V40.8C42 36.3196 42 34.0794 41.1281 32.3681C40.3611 30.8628 39.1372 29.6389 37.6319 28.8719C35.9206 28 33.6804 28 29.2 28H18.8C14.3196 28 12.0794 28 10.3681 28.8719C8.86278 29.6389 7.63893 30.8628 6.87195 32.3681C6 34.0794 6 36.3196 6 40.8Z"
+                                      fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="bevel"
+                                      stroke-width="3"/>
+                            </svg>
                             <span class="channel">
-              个人</span
+              用户</span
                             >
                         </li>
                     </ul>
-        
+                    
                     <div class="information-container ml-2">
                         <Transition>
                             <div v-if="isMore" class="information-pad  ">
@@ -94,27 +138,7 @@
                                             </div>
                                             <div class="divider"></div>
                                         </div>
-                                        <div>
-                                            <div class="group-wrapper">
-                                                <div class="group-header">访问方式</div>
-                                                <div class="menu-item hover-effect">
-                                                    <span>键盘快捷键</span>
-                                                    <div class="icon">
-                                                        <Search style="width: 1em; height: 1em; margin-right: 8px"/>
-                                                    </div>
-                                                </div>
-                                                <div class="menu-item hover-effect">
-                                                    <span>添加山小科到桌面</span>
-                                                    <div class="icon">
-                                                        <ArrowRight style="width: 1em; height: 1em; margin-right: 8px"/>
-                                                    </div>
-                                                </div>
-                                                <div class="menu-item hover-effect">
-                                                    <span>小窗模式</span>
-                                                </div>
-                                            </div>
-                                            <div class="divider"></div>
-                                        </div>
+                                        
                                         <div>
                                             <div class="group-wrapper">
                                                 <div class="group-header">设置</div>
@@ -149,31 +173,20 @@
                     </div>
                 </div>
             </Transition>
-      
+            
             <div class="main-content with-side-bar">
                 <router-view/>
             </div>
         </div>
         <div class="max-[1024px]:hidden">
-    
-            <Login v-show="isLogin" @click-child="close" ></Login>
+            
+            <Login v-show="isLogin" @click-child="close"></Login>
         </div>
     </div>
 </template>
 
 <script lang="ts" setup>
-import {
-    ArrowRight,
-    Bell,
-    Close,
-    House,
-    Moon,
-    More,
-    Search,
-    Star,
-    Sunny,
-    User,
-} from "@element-plus/icons-vue";
+import {ArrowRight, Close, Moon, More, Search, Sunny,} from "@element-plus/icons-vue";
 import {useRouter} from "vue-router";
 import Login from "@/pages/login.vue";
 import {ref} from "vue";
@@ -200,9 +213,9 @@ const toMessage = () => {
     AppGlobal.pageChance = 2
     router.push({path: "/message"});
 };
-const updataMenu=()=>{
+const updataMenu = () => {
     console.log('updataMenu')
-    AppGlobal.isDrawerState=!AppGlobal.isDrawerState
+    AppGlobal.isDrawerState = !AppGlobal.isDrawerState
 }
 
 const toUser = () => {
@@ -301,7 +314,7 @@ const close = (val: boolean) => {
   font-size: 16px;
   line-height: 120%;
   color: #333;
-  caret-color: #ff2442;
+  caret-color: #005abd;
   background: rgba(0, 0, 0, 0.03);
   border-radius: 999px;
 }
@@ -392,7 +405,7 @@ const close = (val: boolean) => {
 }
 
 .container .main .side-bar .channel-list .active-channel {
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(144, 178, 217, 0.15);
   border-radius: 999px;
   color: #333;
 }

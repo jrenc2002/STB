@@ -9,7 +9,7 @@
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>名字</a>
+              <a class>可乐</a>
             </div>
             <div class="interaction-hint"><span>1天前</span></div>
             <div class="interaction-content">具体内容</div>
@@ -26,8 +26,8 @@
             </div>
 
             <div class="interaction-footer">
-              <div class="icon-item"><Star style="width: 1em; height: 1em" /><span class="count">123</span></div>
-              <div class="icon-item"><ChatRound style="width: 1em; height: 1em" /><span class="count">123</span></div>
+              <div class="icon-item"><Star style="width: 1em; height: 1em" /><span class="count">12</span></div>
+              <div class="icon-item"><ChatRound style="width: 1em; height: 1em" /><span class="count">51</span></div>
               <div class="icon-item"><More style="width: 1em; height: 1em" /></div>
             </div>
           </div>
@@ -41,9 +41,9 @@
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>名字</a>
+              <a class>可悲</a>
             </div>
-            <div class="interaction-hint"><span>1天前</span></div>
+            <div class="interaction-hint"><span>2天前</span></div>
             <div class="interaction-content">具体内容</div>
               <div class="interaction-imgs">
                   <ul role="list" class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
@@ -58,40 +58,6 @@
             <div class="interaction-footer">
               <div class="icon-item"><Star style="width: 1em; height: 1em" /><span class="count">25</span></div>
               <div class="icon-item"><ChatRound style="width: 1em; height: 1em" /><span class="count">83</span></div>
-              <div class="icon-item"><More style="width: 1em; height: 1em" /></div>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="trend-item">
-        <a class="user-avatar">
-          <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/DdkME2jI.jpg" />
-        </a>
-        <div class="main">
-          <div class="info">
-            <div class="user-info">
-              <a class>名字</a>
-            </div>
-            <div class="interaction-hint"><span>1天前</span></div>
-            <div class="interaction-content">具体内容</div>
-            <div class="interaction-imgs">
-              <div class="details-box">
-                <img src="https://img2.imgtp.com/2024/05/04/pHawEm7c.jpg" />
-              </div>
-              <div class="details-box">
-                <img src="https://img2.imgtp.com/2024/05/04/GCdcnmrW.jpg" />
-              </div>
-              <div class="details-box">
-                <img src="https://img2.imgtp.com/2024/05/04/UrqunCaV.jpg" />
-              </div>
-              <div class="details-box">
-                <img src="https://img2.imgtp.com/2024/05/04/Ebbe4lQa.jpg" />
-              </div>
-            </div>
-            <div class="interaction-footer">
-              <div class="icon-item"><Star style="width: 1em; height: 1em" /><span class="count">123</span></div>
-              <div class="icon-item"><ChatRound style="width: 1em; height: 1em" /><span class="count">123</span></div>
               <div class="icon-item"><More style="width: 1em; height: 1em" /></div>
             </div>
           </div>
@@ -123,7 +89,6 @@ const files = [
 
 .container {
   flex: 1;
-  padding: 0 24px;
   padding-top: 72px;
   width: calc(90vw - 24px);
   max-width: 840px;

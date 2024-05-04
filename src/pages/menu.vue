@@ -32,7 +32,7 @@
                         <li @click="toUser()" :class="[AppGlobal.pageChance==4?'active-channel text-blue-500':'','text-xl m-4']">
                             <User style="width: 1em; height: 1em; margin-right: 8px"/>
                             <span class="channel" >
-              个人</span
+              用户</span
                             >
                         </li>
                     </ul>
