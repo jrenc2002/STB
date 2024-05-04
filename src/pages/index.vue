@@ -11,9 +11,8 @@
                             </path>
                         </g>
                     </svg>
-                
-                
                 </a>
+                
                 <div class="tool-box"></div>
                 <div class="input-box">
                     <input class="search-input" placeholder="搜索山小科" type="text"/>
@@ -26,41 +25,48 @@
                         </div>
                     </div>
                 </div>
-                <div class="right"></div>
+                <div class="right max-md:cursor-pointer md:hidden  " @click="updataMenu()" >
+                    <svg aria-hidden="true" fill="none" height="24" width="24">
+                        <path d="M12 6v.01M12 12v.01M12 18v.01M12 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
+                              stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                              stroke-width="1.5"></path>
+                    </svg>
+                </div>
+                <Menu v-show="AppGlobal.isDrawerState" @click-child="close"></Menu>
             </header>
         </div>
         <div class="main">
             <div class="side-bar">
                 <ul class="channel-list">
-                    <li :class="AppGlobal.pageChance==0?'active-channel':''">
-                        <a class="link-wrapper " >
+                    <li :class="AppGlobal.pageChance==0?'active-channel':''" @click="toDashboard()">
+                        <a class="link-wrapper ">
                             <House style="width: 1em; height: 1em; margin-right: 8px"/>
-                            <span class="channel" @click="toDashboard()"
+                            <span class="channel"
                             >发现</span
                             ></a
                         >
                     </li>
-                    <li :class="AppGlobal.pageChance==1?'active-channel':''">
+                    <li :class="AppGlobal.pageChance==1?'active-channel':''" @click="toTrend()">
                         <Star style="width: 1em; height: 1em; margin-right: 8px"/>
-                        <span class="channel" @click="toTrend()">
+                        <span class="channel" >
               动态</span
                         >
                     </li>
-                    <li :class="AppGlobal.pageChance==2?'active-channel':''">
+                    <li :class="AppGlobal.pageChance==2?'active-channel':''" @click="toMessage()">
                         <Bell style="width: 1em; height: 1em; margin-right: 8px"/>
-                        <span class="channel" @click="toMessage()">
+                        <span class="channel" >
               消息</span
                         >
                     </li>
-                    <li :class="AppGlobal.pageChance==3?'active-channel':''">
+                    <li :class="AppGlobal.pageChance==3?'active-channel':''" @click="toPush()">
                         <CirclePlus style="width: 1em; height: 1em; margin-right: 8px"/>
-                        <span class="channel" @click="toPush()">
+                        <span class="channel" >
               发布</span
                         >
                     </li>
-                    <li :class="AppGlobal.pageChance==4?'active-channel ':''">
+                    <li :class="AppGlobal.pageChance==4?'active-channel ':''"  @click="toUser()">
                         <User style="width: 1em; height: 1em; margin-right: 8px"/>
-                        <span class="channel" @click="toUser()">
+                        <span class="channel">
               个人</span
                         >
                     </li>
@@ -150,7 +156,7 @@
             </div>
         </div>
         
-        <Login v-show="c" @click-child="close"></Login>
+        <Login v-show="isLogin" @click-child="close"></Login>
     </div>
 </template>
 
@@ -172,12 +178,13 @@ import {useRouter} from "vue-router";
 import Login from "@/pages/login.vue";
 import {ref} from "vue";
 import {useAppGlobal} from "@/store/AppGlobal";
+import Menu from "@/pages/menu.vue";
+
 
 const router = useRouter();
 const isMore = ref(false)
-const c = ref(true);
+const isLogin = ref(true);
 const AppGlobal = useAppGlobal()
-console.log(AppGlobal.pageChance, '111')
 const toDashboard = () => {
     AppGlobal.pageChance = 0
     router.push({path: "/"});
@@ -193,6 +200,10 @@ const toMessage = () => {
     AppGlobal.pageChance = 2
     router.push({path: "/message"});
 };
+const updataMenu=()=>{
+    console.log('updataMenu')
+    AppGlobal.isDrawerState=!AppGlobal.isDrawerState
+}
 
 const toUser = () => {
     AppGlobal.pageChance = 4
@@ -204,8 +215,7 @@ const toPush = () => {
 };
 
 const close = (val: boolean) => {
-    console.log(val);
-    c.value = val;
+    isLogin.value = val;
 };
 </script>
 

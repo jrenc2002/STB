@@ -2,7 +2,7 @@
   <div class="container">
     <div class style="height: 72px">
       <div class="reds-sticky">
-        <div class="reds-tabs-list">
+        <div class="reds-tabs-list ">
           <div class="reds-tab-item active tab-item">
             <div class="badge-container">
               <span>我的消息</span>

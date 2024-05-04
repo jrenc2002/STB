@@ -10,6 +10,7 @@
     "lint:prettier": "prettier --write \"**/*.{js,ts,json,css,less,scss,vue,html,md}\""
   },
   "dependencies": {
+    "@heroicons/vue": "^2.1.3",
     "axios": "^1.5.1",
     "daisyui": "^4.10.5",
     "element-plus": "^2.4.1",
