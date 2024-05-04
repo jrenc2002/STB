@@ -27,7 +27,7 @@
                                 </a>
                                 <span class="like-wrapper like-active">
                   <Search style="width: 1em; height: 1em"/>
-                  <span class="count">{{Math.floor(Math.random(index)*10)}}</span>
+                  <span class="count">{{Math.floor(Math.random()*10)}}</span>
                 </span>
                             </div>
                         </div>
