@@ -14,19 +14,20 @@
             <div class="interaction-hint"><span>1天前</span></div>
             <div class="interaction-content">具体内容</div>
             <div class="interaction-imgs">
-              <div class="details-box">
-                <img src="https://img2.imgtp.com/2024/05/04/pHawEm7c.jpg" />
-              </div>
-              <div class="details-box">
-                <img src="https://img2.imgtp.com/2024/05/04/GCdcnmrW.jpg" />
-              </div>
-              <div class="details-box">
-                <img src="https://img2.imgtp.com/2024/05/04/UrqunCaV.jpg" />
-              </div>
-              <div class="details-box">
-                <img src="https://img2.imgtp.com/2024/05/04/Ebbe4lQa.jpg" />
-              </div>
+                <ul role="list" class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+                    <li v-for="file in files" :key="file.source" class="relative">
+                        <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+                            <img :src="file.source" alt="" class="pointer-events-none object-cover group-hover:opacity-75" />
+                            <button type="button" class="absolute inset-0 focus:outline-none">
+                                <span class="sr-only">View details for {{ file.title }}</span>
+                            </button>
+                        </div>
+                        <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">{{ file.title }}</p>
+                        <p class="pointer-events-none block text-sm font-medium text-gray-500">{{ file.size }}</p>
+                    </li>
+                </ul>
             </div>
+
             <div class="interaction-footer">
               <div class="icon-item"><Star style="width: 1em; height: 1em" /><span class="count">123</span></div>
               <div class="icon-item"><ChatRound style="width: 1em; height: 1em" /><span class="count">123</span></div>
@@ -47,23 +48,23 @@
             </div>
             <div class="interaction-hint"><span>1天前</span></div>
             <div class="interaction-content">具体内容</div>
-            <div class="interaction-imgs">
-              <div class="details-box">
-                <img src="https://img2.imgtp.com/2024/05/04/pHawEm7c.jpg" />
+              <div class="interaction-imgs">
+                  <ul role="list" class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+                      <li v-for="file in files" :key="file.source" class="relative">
+                          <div class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
+                              <img :src="file.source" alt="" class="pointer-events-none object-cover group-hover:opacity-75" />
+                              <button type="button" class="absolute inset-0 focus:outline-none">
+                                  <span class="sr-only">View details for {{ file.title }}</span>
+                              </button>
+                          </div>
+                          <p class="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">{{ file.title }}</p>
+                          <p class="pointer-events-none block text-sm font-medium text-gray-500">{{ file.size }}</p>
+                      </li>
+                  </ul>
               </div>
-              <div class="details-box">
-                <img src="https://img2.imgtp.com/2024/05/04/GCdcnmrW.jpg" />
-              </div>
-              <div class="details-box">
-                <img src="https://img2.imgtp.com/2024/05/04/UrqunCaV.jpg" />
-              </div>
-              <div class="details-box">
-                <img src="https://img2.imgtp.com/2024/05/04/Ebbe4lQa.jpg" />
-              </div>
-            </div>
             <div class="interaction-footer">
-              <div class="icon-item"><Star style="width: 1em; height: 1em" /><span class="count">123</span></div>
-              <div class="icon-item"><ChatRound style="width: 1em; height: 1em" /><span class="count">123</span></div>
+              <div class="icon-item"><Star style="width: 1em; height: 1em" /><span class="count">25</span></div>
+              <div class="icon-item"><ChatRound style="width: 1em; height: 1em" /><span class="count">83</span></div>
               <div class="icon-item"><More style="width: 1em; height: 1em" /></div>
             </div>
           </div>
@@ -108,9 +109,25 @@
 </template>
 <script lang="ts" setup>
 import { Star, ChatRound, More } from "@element-plus/icons-vue";
+const files = [
+    {
+        source:'https://img2.imgtp.com/2024/05/04/pHawEm7c.jpg',
+    },
+    {
+        source:'https://img2.imgtp.com/2024/05/04/GCdcnmrW.jpg',
+    },
+    {
+        source:'https://img2.imgtp.com/2024/05/04/UrqunCaV.jpg',
+    },
+    {
+        source:'https://img2.imgtp.com/2024/05/04/Ebbe4lQa.jpg',
+    },
+
+]
 </script>
 
 <style scoped>
+
 .container {
   flex: 1;
   padding: 0 24px;

@@ -154,8 +154,10 @@
                 <router-view/>
             </div>
         </div>
-        
-        <Login v-show="isLogin" @click-child="close"></Login>
+        <div class="max-[1024px]:hidden">
+    
+            <Login v-show="isLogin" @click-child="close" ></Login>
+        </div>
     </div>
 </template>
 

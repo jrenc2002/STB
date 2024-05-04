@@ -89,7 +89,7 @@ const toFollower = () => {
   border-radius: 20px;
 }
 .container .reds-sticky .reds-tabs-list .reds-tab-item {
-  padding: 0px 16px;
+  padding: 0px 13px;
   margin-right: 0px;
   font-size: 16px;
   display: flex;
