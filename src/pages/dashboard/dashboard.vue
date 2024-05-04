@@ -14,20 +14,20 @@
         </div>
         <div class="loading-container"></div>
         <div class="feeds-container">
-            <Waterfall :hasAroundGutter="false" :list="list" :width="240" style="max-width: 1260px">
+            <Waterfall :crossOrigin="false"  :hasAroundGutter="false" :list="list" :width="240" style="max-width: 1260px">
                 <template #item="{  url,index }">
                     <div class="card">
                         <LazyImg :url="url" style="border-radius: 8px"/>
                         <div class="footer">
-                            <a class="title"><span>{{titles[index]}}</span></a>
+                            <a class="title"><span>{{ titles[index] }}</span></a>
                             <div class="author-wrapper">
                                 <a class="author">
                                     <img :src="url" class="author-avatar"/>
-                                    <span class="name">{{  usernames[index]}}</span>
+                                    <span class="name">{{ usernames[index] }}</span>
                                 </a>
                                 <span class="like-wrapper like-active">
                   <Search style="width: 1em; height: 1em"/>
-                  <span class="count">{{Math.floor(Math.random()*10)}}</span>
+                  <span class="count">{{ Math.floor(Math.random() * 10) }}</span>
                 </span>
                             </div>
                         </div>
@@ -47,27 +47,86 @@ import {ref} from "vue";
 
 
 const list = ref([
+    { src: "https://picui.cn/i/2024/05/05/6636653f1efbe.png" },
+    { src: "https://picui.cn/i/2024/05/05/6636653f9c3e5.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/6636653f96b60.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/6636653fa0ad9.png" },
+    { src: "https://picui.cn/i/2024/05/05/6636653f7172e.png" },
+    { src: "https://picui.cn/i/2024/05/05/6636653fc72dd.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/66366540128e6.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/6636653f1efbe.png" },
+    { src: "https://picui.cn/i/2024/05/05/66366540a4bb7.png" },
+    { src: "https://picui.cn/i/2024/05/05/66366540a56c8.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/6636654476da4.png" },
+    { src: "https://picui.cn/i/2024/05/05/6636654715020.png" },
+    { src: "https://picui.cn/i/2024/05/05/66366542590e9.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/663665449a1c6.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/6636654756ecc.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/663665487ff86.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/6636654983b06.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/6636654995b41.png" },
+    { src: "https://picui.cn/i/2024/05/05/66366549ef6f2.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/6636654a00b27.png" },
+    { src: "https://picui.cn/i/2024/05/05/663665749ae40.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/663665747e4ee.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/663665753f279.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/66366575126ca.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/663665749d1e6.png" },
+    { src: "https://picui.cn/i/2024/05/05/66366575c721a.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/663665757d426.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd195428.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd18f4f2.png" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd18c37b.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd1919f8.png" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd19cfe9.png" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd2b5c1e.png" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd320b7f.png" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd3257d6.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd326df1.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd326212.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd351fe7.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd3ac172.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd60a2a4.png" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd602d86.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd19cfe9.png" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd606cea.png" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd60556d.png" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd77c8a4.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd775fe6.png" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd7246ea.jpg" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd785a06.png" },
+    { src: "https://picui.cn/i/2024/05/05/66366cd787376.png" },
+    {src: "https://picui.cn/i/2024/05/05/6636653f1efbe.png"},
+    {src: "https://picui.cn/i/2024/05/05/6636653f9c3e5.jpg"},
+    {src: "https://picui.cn/i/2024/05/05/6636653f96b60.jpg"},
+    {src: "https://picui.cn/i/2024/05/05/6636653fa0ad9.png"},
+    {src: "https://picui.cn/i/2024/05/05/6636653f7172e.png"},
+    {src: "https://picui.cn/i/2024/05/05/6636653fc72dd.jpg"},
+    {src: "https://picui.cn/i/2024/05/05/66366540128e6.jpg"},
+    {src: "https://picui.cn/i/2024/05/05/6636653f1efbe.png"},
+    {src: "https://picui.cn/i/2024/05/05/66366540a4bb7.png"},
+    {src: "https://picui.cn/i/2024/05/05/66366540a56c8.jpg"},
+    {src: "https://picui.cn/i/2024/05/05/6636653f1efbe.png"},
+    {src: "https://picui.cn/i/2024/05/05/6636653f9c3e5.jpg"},
+    {src: "https://picui.cn/i/2024/05/05/6636653f96b60.jpg"},
+    {src: "https://picui.cn/i/2024/05/05/6636653fa0ad9.png"},
+    {src: "https://picui.cn/i/2024/05/05/6636653f7172e.png"},
+    {src: "https://picui.cn/i/2024/05/05/6636653fc72dd.jpg"},
+    {src: "https://picui.cn/i/2024/05/05/66366540128e6.jpg"},
+    {src: "https://picui.cn/i/2024/05/05/6636653f1efbe.png"},
+    {src: "https://picui.cn/i/2024/05/05/66366540a4bb7.png"},
+    {src: "https://picui.cn/i/2024/05/05/66366540a56c8.jpg"},
+    {src: "https://picui.cn/i/2024/05/05/6636654476da4.png"},
+    {src: "https://picui.cn/i/2024/05/05/6636654715020.png"},
+    {src: "https://picui.cn/i/2024/05/05/66366542590e9.jpg"},
+    {src: "https://picui.cn/i/2024/05/05/663665449a1c6.jpg"},
+    {src: "https://picui.cn/i/2024/05/05/6636654756ecc.jpg"},
+    {src: "https://picui.cn/i/2024/05/05/663665487ff86.jpg"},
+    {src: "https://picui.cn/i/2024/05/05/6636654983b06.jpg"},
+    {src: "https://picui.cn/i/2024/05/05/6636654995b41.png"},
+    {src: "https://picui.cn/i/2024/05/05/66366549ef6f2.jpg"},
+    {src: "https://picui.cn/i/2024/05/05/6636654a00b27.png"}
 
-    {src: "../../src/assets/imgs/图片9.jpg"},
-    {src: "../../src/assets/imgs/图片8.jpg"},
-    {src: "../../src/assets/imgs/图片10.jpg"},
-    {src: "../../src/assets/imgs/图片11.jpg"},
-    {src: "../../src/assets/imgs/图片12.jpg"},
-    {src: "../../src/assets/imgs/图片13.png"},
-    {src: "../../src/assets/imgs/图片14.jpg"},
-    {src: "../../src/assets/imgs/图片14.jpg"},
-    {src: "../../src/assets/imgs/图片15.png"},
-    {src: "../../src/assets/imgs/图片16.png"},
-    {src: "../../src/assets/imgs/图片17.png"},
-    {src: "../../src/assets/imgs/图片18.jpg"},
-    {src: "../../src/assets/imgs/图片19.png"},
-    {src: "../../src/assets/imgs/图片20.jpg"},
-    {src: "../../src/assets/imgs/图片21.png"},
-    {src: "../../src/assets/imgs/e4a16ff3-ba21-47bb-aa80-80ca98e89c3b.webp"},
-    {src: "../../src/assets/imgs/b_55b6379d2a7e8227de40159de11311c8.jpg"},
-    {src: "../../src/assets/imgs/IMG_2090(20240315-013315).JPG"},
-    {src: "../../src/assets/imgs/IMG_2089(20240315-013312).JPG"},
-    {src: "../../src/assets/imgs/IMG_2092(20240315-013319).JPG"},
 ]);
 const titles = [
     "开创未来的科技", "探索宇宙的奥秘", "创新与挑战", "智能时代的生活", "数字化转型", "可持续发展",
