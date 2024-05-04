@@ -5,7 +5,7 @@
         <div class="avatar">
           <div class="avatar-wrapper">
             <img
-              src="https://sns-avatar-qc.xhscdn.com/avatar/5fb295387373d50001ddf25f.jpg?imageView2/2/w/540/format/webp|imageMogr2/strip2"
+              src="../../assets/imgs/ee4ad9b89f4e67125e74e484e10a1688.jpg"
               class="user-image"
               style="border: 1px solid rgba(0, 0, 0, 0.08)"
             />
@@ -16,21 +16,21 @@
             <div class="basic-info">
               <div class="user-basic">
                 <div class="user-nickname">
-                  <div class="user-name">三块给你买麻吉<!----></div>
+                  <div class="user-name">写代码写的<!----></div>
                 </div>
                 <div class="user-content">
-                  <span class="user-redId">山小科号：275592512</span><span class="user-IP"> IP属地：广东</span>
+                  <span class="user-redId">山小科号：862055705</span><span class="user-IP"> IP属地：山东</span>
                 </div>
               </div>
             </div>
             <div class="user-desc">
-              永远爱蜡笔小新，哆啦A梦（只是哆啦A梦），柯南，银魂（后悔没有早点入坑），火影，小埋！。
+              君子报仇 十年不晚
             </div>
             <div class="user-tags">
               <div class="tag-item">
                 <div>射手座</div>
               </div>
-              <div class="tag-item"><div>广东广州</div></div>
+              <div class="tag-item"><div>山东青岛</div></div>
               <div class="tag-item"><div>程序员</div></div>
             </div>
             <div class="data-info">

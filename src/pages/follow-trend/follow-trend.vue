@@ -4,27 +4,27 @@
       <li class="trend-item">
         <a class="user-avatar">
           <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/DdkME2jI.jpg" />
         </a>
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>这是名词</a>
+              <a class>名字</a>
             </div>
             <div class="interaction-hint"><span>1天前</span></div>
-            <div class="interaction-content">这是具体内容</div>
+            <div class="interaction-content">具体内容</div>
             <div class="interaction-imgs">
               <div class="details-box">
-                <img src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+                <img src="https://img2.imgtp.com/2024/05/04/pHawEm7c.jpg" />
               </div>
               <div class="details-box">
-                <img src="https://fuss10.elemecdn.com/1/34/19aa98b1fcb2781c4fba33d850549jpeg.jpeg" />
+                <img src="https://img2.imgtp.com/2024/05/04/GCdcnmrW.jpg" />
               </div>
               <div class="details-box">
-                <img src="https://fuss10.elemecdn.com/0/6f/e35ff375812e6b0020b6b4e8f9583jpeg.jpeg" />
+                <img src="https://img2.imgtp.com/2024/05/04/UrqunCaV.jpg" />
               </div>
               <div class="details-box">
-                <img src="https://fuss10.elemecdn.com/3/28/bbf893f792f03a54408b3b7a7ebf0jpeg.jpeg" />
+                <img src="https://img2.imgtp.com/2024/05/04/Ebbe4lQa.jpg" />
               </div>
             </div>
             <div class="interaction-footer">
@@ -38,27 +38,27 @@
       <li class="trend-item">
         <a class="user-avatar">
           <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/DdkME2jI.jpg" />
         </a>
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>这是名词</a>
+              <a class>名字</a>
             </div>
             <div class="interaction-hint"><span>1天前</span></div>
-            <div class="interaction-content">这是具体内容</div>
+            <div class="interaction-content">具体内容</div>
             <div class="interaction-imgs">
               <div class="details-box">
-                <img src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+                <img src="https://img2.imgtp.com/2024/05/04/pHawEm7c.jpg" />
               </div>
               <div class="details-box">
-                <img src="https://fuss10.elemecdn.com/1/34/19aa98b1fcb2781c4fba33d850549jpeg.jpeg" />
+                <img src="https://img2.imgtp.com/2024/05/04/GCdcnmrW.jpg" />
               </div>
               <div class="details-box">
-                <img src="https://fuss10.elemecdn.com/0/6f/e35ff375812e6b0020b6b4e8f9583jpeg.jpeg" />
+                <img src="https://img2.imgtp.com/2024/05/04/UrqunCaV.jpg" />
               </div>
               <div class="details-box">
-                <img src="https://fuss10.elemecdn.com/3/28/bbf893f792f03a54408b3b7a7ebf0jpeg.jpeg" />
+                <img src="https://img2.imgtp.com/2024/05/04/Ebbe4lQa.jpg" />
               </div>
             </div>
             <div class="interaction-footer">
@@ -72,27 +72,27 @@
       <li class="trend-item">
         <a class="user-avatar">
           <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/DdkME2jI.jpg" />
         </a>
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>这是名词</a>
+              <a class>名字</a>
             </div>
             <div class="interaction-hint"><span>1天前</span></div>
-            <div class="interaction-content">这是具体内容</div>
+            <div class="interaction-content">具体内容</div>
             <div class="interaction-imgs">
               <div class="details-box">
-                <img src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+                <img src="https://img2.imgtp.com/2024/05/04/pHawEm7c.jpg" />
               </div>
               <div class="details-box">
-                <img src="https://fuss10.elemecdn.com/1/34/19aa98b1fcb2781c4fba33d850549jpeg.jpeg" />
+                <img src="https://img2.imgtp.com/2024/05/04/GCdcnmrW.jpg" />
               </div>
               <div class="details-box">
-                <img src="https://fuss10.elemecdn.com/0/6f/e35ff375812e6b0020b6b4e8f9583jpeg.jpeg" />
+                <img src="https://img2.imgtp.com/2024/05/04/UrqunCaV.jpg" />
               </div>
               <div class="details-box">
-                <img src="https://fuss10.elemecdn.com/3/28/bbf893f792f03a54408b3b7a7ebf0jpeg.jpeg" />
+                <img src="https://img2.imgtp.com/2024/05/04/Ebbe4lQa.jpg" />
               </div>
             </div>
             <div class="interaction-footer">
@@ -116,7 +116,7 @@ import { Star, ChatRound, More } from "@element-plus/icons-vue";
   padding: 0 24px;
   padding-top: 72px;
   width: calc(90vw - 24px);
-    max-width: 840px;
+  max-width: 840px;
   margin: 0 auto;
 }
 .container .trend-container .trend-item {

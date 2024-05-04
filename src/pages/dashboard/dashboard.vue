@@ -25,11 +25,11 @@
           <div class="card">
             <LazyImg :url="url" style="border-radius: 8px" @click="toMain" />
             <div class="footer">
-              <a class="title"><span>这是具体内容</span></a>
+              <a class="title"><span>标题</span></a>
               <div class="author-wrapper">
                 <a class="author">
                   <img class="author-avatar" :src="url" />
-                  <span class="name">这是名字</span>
+                  <span class="name">名字</span>
                 </a>
                 <span class="like-wrapper like-active">
                   <Search style="width: 1em; height: 1em" />
@@ -49,6 +49,7 @@ import { Search } from "@element-plus/icons-vue";
 import { LazyImg, Waterfall } from "vue-waterfall-plugin-next";
 import "vue-waterfall-plugin-next/dist/style.css";
 import { useRouter } from "vue-router";
+
 import { ref } from "vue";
 
 const router = useRouter();
@@ -87,115 +88,129 @@ const toMain = () => {
   flex: 1;
   padding: 0 24px;
   padding-top: 72px;
-}
-.feeds-page .channel-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  user-select: none;
-  -webkit-user-select: none;
-}
-.feeds-page .channel-container .channel-scroll-container {
-  backdrop-filter: blur(20px);
-  background-color: transparent;
-  width: calc(100vw - 24px);
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  user-select: none;
-  -webkit-user-select: none;
-  align-items: center;
-  font-size: 16px;
-  color: rgba(51, 51, 51, 0.8);
-  height: 40px;
-  white-space: nowrap;
-  height: 72px;
-}
-.feeds-page .channel-container .channel-scroll-container .content-container::-webkit-scrollbar {
-  display: none;
-}
-.feeds-page .channel-container .channel-scroll-container .content-container {
-  display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  color: rgba(51, 51, 51, 0.8);
-}
-.feeds-page .channel-container .channel-scroll-container .content-container .active {
-  font-weight: 600;
-  background: rgba(0, 0, 0, 0.03);
-  border-radius: 999px;
-  color: #333;
-}
-.feeds-page .channel-container .channel-scroll-container .content-container .channel {
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 16px;
-  cursor: pointer;
-  -webkit-user-select: none;
-  user-select: none;
-}
-.feeds-page .feeds-container {
-  position: relative;
-  transition: width 0.5s;
-  margin: 0 auto;
-}
-.feeds-page .feeds-container .footer {
-  padding: 12px;
-}
-.feeds-page .feeds-container .footer .title {
-  margin-bottom: 8px;
-  word-break: break-all;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 140%;
-  color: #333;
-}
-.feeds-page .feeds-container .footer .author-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 20px;
-  color: rgba(51, 51, 51, 0.8);
-  font-size: 12px;
-  transition: color 1s;
-}
-.feeds-page .feeds-container .footer .author-wrapper .author {
-  display: flex;
-  align-items: center;
-  color: inherit;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  margin-right: 12px;
-}
-.feeds-page .feeds-container .footer .author-wrapper .author .author-avatar {
-  margin-right: 6px;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  flex-shrink: 0;
-}
-.feeds-page .feeds-container .footer .author-wrapper .author .name {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.feeds-page .feeds-container .footer .author-wrapper .like-wrapper {
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-.feeds-page .feeds-container .footer .author-wrapper .like-wrapper .count {
-  margin-left: 2px;
-}
 
+  .channel-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    -webkit-user-select: none;
+
+    .channel-scroll-container {
+      backdrop-filter: blur(20px);
+      background-color: transparent;
+      width: calc(100vw - 24px);
+
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      user-select: none;
+      -webkit-user-select: none;
+      align-items: center;
+      font-size: 16px;
+      color: rgba(51, 51, 51, 0.8);
+      height: 40px;
+      white-space: nowrap;
+      height: 72px;
+
+      .content-container::-webkit-scrollbar {
+        display: none;
+      }
+
+      .content-container {
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        color: rgba(51, 51, 51, 0.8);
+
+        .active {
+          font-weight: 600;
+          background: rgba(0, 0, 0, 0.03);
+          border-radius: 999px;
+          color: #333;
+        }
+
+        .channel {
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0 16px;
+          cursor: pointer;
+          -webkit-user-select: none;
+          user-select: none;
+        }
+      }
+    }
+  }
+
+  .feeds-container {
+    position: relative;
+    transition: width 0.5s;
+    margin: 0 auto;
+
+    .footer {
+      padding: 12px;
+      .title {
+        margin-bottom: 8px;
+        word-break: break-all;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        color: #333;
+      }
+
+      .author-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 20px;
+        color: rgba(51, 51, 51, 0.8);
+        font-size: 12px;
+        transition: color 1s;
+
+        .author {
+          display: flex;
+          align-items: center;
+          color: inherit;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          margin-right: 12px;
+
+          .author-avatar {
+            margin-right: 6px;
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            flex-shrink: 0;
+          }
+
+          .name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+
+        .like-wrapper {
+          position: relative;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+
+          .count {
+            margin-left: 2px;
+          }
+        }
+      }
+    }
+  }
+}
 </style>
