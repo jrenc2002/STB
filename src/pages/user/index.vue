@@ -19,7 +19,7 @@
                   <div class="user-name">三块给你买麻吉<!----></div>
                 </div>
                 <div class="user-content">
-                  <span class="user-redId">小红书号：275592512</span><span class="user-IP"> IP属地：广东</span>
+                  <span class="user-redId">山小科号：275592512</span><span class="user-IP"> IP属地：广东</span>
                 </div>
               </div>
             </div>

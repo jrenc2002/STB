@@ -4,7 +4,7 @@
       <div class="scroll-container channel-scroll-container">
         <div class="content-container">
           <div class="channel active">推荐</div>
-          <div class="channel bg-black">穿搭</div>
+          <div class="channel ">穿搭</div>
           <div class="channel">美食</div>
           <div class="channel">彩妆</div>
           <div class="channel ">影视</div>

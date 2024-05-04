@@ -1,7 +1,7 @@
-# 仿小红书web前端页面
+# 仿山小科web前端页面
 
 #### Description
-一个仿照小红书web端设计的前端项目，只需要写后端代码和会一点vue技术即可完成全部项目，不在需要自己写样式。
+一个仿照山小科web端设计的前端项目，只需要写后端代码和会一点vue技术即可完成全部项目，不在需要自己写样式。
 
 #### Software Architecture
 Software architecture description
