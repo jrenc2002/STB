@@ -4,48 +4,48 @@
       <li class="agree-item">
         <a class="user-avatar">
           <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/AUYCrJwp.jpg" />
         </a>
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>这是名词</a>
+              <a class>名字</a>
             </div>
-            <div class="interaction-hint"><span>赞了您的笔记&nbsp;</span><span>2021-10-9</span></div>
+            <div class="interaction-hint"><span>赞了您的笔记&nbsp;</span><span>2023-10-9</span></div>
             <div class="interaction-content">
-              <span>这是具体内容</span>
+              <span>具体内容</span>
             </div>
           </div>
           <div class="extra">
-            <img class="extra-image" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+            <img class="extra-image" src="https://img2.imgtp.com/2024/05/04/mdm1Npos.jpg" />
           </div>
         </div>
       </li>
       <li class="agree-item">
-        <a class="user-avatar">
-          <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
-        </a>
-        <div class="main">
-          <div class="info">
-            <div class="user-info">
-              <a class>这是名词</a>
-            </div>
-            <div class="interaction-hint"><span>赞了您的评论&nbsp;</span><span>2021-10-9</span></div>
-            <div class="interaction-content">
-              <span>这是具体内容</span>
-            </div>
-            <div class="quote-info">确实是不行</div>
+      <a class="user-avatar">
+        <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
+        <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/AUYCrJwp.jpg" />
+      </a>
+      <div class="main">
+        <div class="info">
+          <div class="user-info">
+            <a class>名字</a>
           </div>
-          <div class="extra">
-            <img class="extra-image" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <div class="interaction-hint"><span>赞了您的笔记&nbsp;</span><span>2023-10-9</span></div>
+          <div class="interaction-content">
+            <span>具体内容</span>
           </div>
         </div>
+        <div class="extra">
+          <img class="extra-image" src="https://img2.imgtp.com/2024/05/04/mdm1Npos.jpg" />
+        </div>
+      </div>
       </li>
     </ul>
   </div>
 </template>
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+</script>
 <style lang="less" scoped>
 textarea {
   overflow: auto;

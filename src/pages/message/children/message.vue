@@ -4,18 +4,18 @@
       <li class="message-item">
         <a class="user-avatar">
           <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/b6vGDLrz.jpg" />
         </a>
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>这是名词</a>
-              <div class="interaction-hint"><span>2021-10-9</span></div>
+              <a class>名字</a>
+              <div class="interaction-hint"><span>2023-10-9</span></div>
             </div>
 
             <div class="interaction-content" @click="toChat">
-              <span>这是具体内容</span>
-              <div class="msg-count">9</div>
+              <span>具体内容</span>
+              <div class="msg-count">5</div>
             </div>
           </div>
         </div>
@@ -23,18 +23,18 @@
       <li class="message-item">
         <a class="user-avatar">
           <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/b6vGDLrz.jpg" />
         </a>
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>这是名词</a>
-              <div class="interaction-hint"><span>2021-10-9</span></div>
+              <a class>名字</a>
+              <div class="interaction-hint"><span>2023-10-9</span></div>
             </div>
 
-            <div class="interaction-content">
-              <span>这是具体内容</span>
-              <div class="msg-count">9</div>
+            <div class="interaction-content" @click="toChat">
+              <span>具体内容</span>
+              <div class="msg-count">5</div>
             </div>
           </div>
         </div>
@@ -42,18 +42,18 @@
       <li class="message-item">
         <a class="user-avatar">
           <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/b6vGDLrz.jpg" />
         </a>
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>这是名词</a>
-              <div class="interaction-hint"><span>2021-10-9</span></div>
+              <a class>名字</a>
+              <div class="interaction-hint"><span>2023-10-9</span></div>
             </div>
 
-            <div class="interaction-content">
-              <span>这是具体内容</span>
-              <div class="msg-count">9</div>
+            <div class="interaction-content" @click="toChat">
+              <span>具体内容</span>
+              <div class="msg-count">5</div>
             </div>
           </div>
         </div>
@@ -61,18 +61,18 @@
       <li class="message-item">
         <a class="user-avatar">
           <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/b6vGDLrz.jpg" />
         </a>
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>这是名词</a>
-              <div class="interaction-hint"><span>2021-10-9</span></div>
+              <a class>名字</a>
+              <div class="interaction-hint"><span>2023-10-9</span></div>
             </div>
 
-            <div class="interaction-content">
-              <span>这是具体内容</span>
-              <div class="msg-count">9</div>
+            <div class="interaction-content" @click="toChat">
+              <span>具体内容</span>
+              <div class="msg-count">5</div>
             </div>
           </div>
         </div>
@@ -80,18 +80,18 @@
       <li class="message-item">
         <a class="user-avatar">
           <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/b6vGDLrz.jpg" />
         </a>
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>这是名词</a>
-              <div class="interaction-hint"><span>2021-10-9</span></div>
+              <a class>名字</a>
+              <div class="interaction-hint"><span>2023-10-9</span></div>
             </div>
 
-            <div class="interaction-content">
-              <span>这是具体内容</span>
-              <div class="msg-count">9</div>
+            <div class="interaction-content" @click="toChat">
+              <span>具体内容</span>
+              <div class="msg-count">5</div>
             </div>
           </div>
         </div>
@@ -99,18 +99,18 @@
       <li class="message-item">
         <a class="user-avatar">
           <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/b6vGDLrz.jpg" />
         </a>
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>这是名词</a>
-              <div class="interaction-hint"><span>2021-10-9</span></div>
+              <a class>名字</a>
+              <div class="interaction-hint"><span>2023-10-9</span></div>
             </div>
 
-            <div class="interaction-content">
-              <span>这是具体内容</span>
-              <div class="msg-count">9</div>
+            <div class="interaction-content" @click="toChat">
+              <span>具体内容</span>
+              <div class="msg-count">5</div>
             </div>
           </div>
         </div>
@@ -118,18 +118,18 @@
       <li class="message-item">
         <a class="user-avatar">
           <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/b6vGDLrz.jpg" />
         </a>
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>这是名词</a>
-              <div class="interaction-hint"><span>2021-10-9</span></div>
+              <a class>名字</a>
+              <div class="interaction-hint"><span>2023-10-9</span></div>
             </div>
 
-            <div class="interaction-content">
-              <span>这是具体内容</span>
-              <div class="msg-count">9</div>
+            <div class="interaction-content" @click="toChat">
+              <span>具体内容</span>
+              <div class="msg-count">5</div>
             </div>
           </div>
         </div>
@@ -137,18 +137,18 @@
       <li class="message-item">
         <a class="user-avatar">
           <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/b6vGDLrz.jpg" />
         </a>
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>这是名词</a>
-              <div class="interaction-hint"><span>2021-10-9</span></div>
+              <a class>名字</a>
+              <div class="interaction-hint"><span>2023-10-9</span></div>
             </div>
 
-            <div class="interaction-content">
-              <span>这是具体内容</span>
-              <div class="msg-count">9</div>
+            <div class="interaction-content" @click="toChat">
+              <span>具体内容</span>
+              <div class="msg-count">5</div>
             </div>
           </div>
         </div>
@@ -156,18 +156,18 @@
       <li class="message-item">
         <a class="user-avatar">
           <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/b6vGDLrz.jpg" />
         </a>
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>这是名词</a>
-              <div class="interaction-hint"><span>2021-10-9</span></div>
+              <a class>名字</a>
+              <div class="interaction-hint"><span>2023-10-9</span></div>
             </div>
 
-            <div class="interaction-content">
-              <span>这是具体内容</span>
-              <div class="msg-count">9</div>
+            <div class="interaction-content" @click="toChat">
+              <span>具体内容</span>
+              <div class="msg-count">5</div>
             </div>
           </div>
         </div>
@@ -175,18 +175,18 @@
       <li class="message-item">
         <a class="user-avatar">
           <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/b6vGDLrz.jpg" />
         </a>
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>这是名词</a>
-              <div class="interaction-hint"><span>2021-10-9</span></div>
+              <a class>名字</a>
+              <div class="interaction-hint"><span>2023-10-9</span></div>
             </div>
 
-            <div class="interaction-content">
-              <span>这是具体内容</span>
-              <div class="msg-count">9</div>
+            <div class="interaction-content" @click="toChat">
+              <span>具体内容</span>
+              <div class="msg-count">5</div>
             </div>
           </div>
         </div>

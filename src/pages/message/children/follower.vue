@@ -4,18 +4,18 @@
       <li class="agree-item">
         <a class="user-avatar">
           <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/GCdcnmrW.jpg" />
         </a>
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>这是名词</a>
+              <a class>名字</a>
             </div>
-            <div class="interaction-hint"><span>开始关注您了&nbsp;</span><span>2021-10-9</span></div>
+            <div class="interaction-hint"><span>开始关注您了&nbsp;</span><span>2023-10-9</span></div>
           </div>
           <div class="extra">
-            <button class="reds-button-new follow-button large primary follow-button">
-              <span class="reds-button-new-box"><span class="reds-button-new-text">回关</span></span>
+            <button aria-disabled="false" type="button" class="bg-[#2A82E4] w-24 h-10 text-white rounded-full" >
+              <span class="font-bold">关注</span>
             </button>
           </div>
         </div>
@@ -23,18 +23,18 @@
       <li class="agree-item">
         <a class="user-avatar">
           <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/GCdcnmrW.jpg" />
         </a>
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>这是名词</a>
+              <a class>名字</a>
             </div>
-            <div class="interaction-hint"><span>开始关注您了&nbsp;</span><span>2021-10-9</span></div>
+            <div class="interaction-hint"><span>开始关注您了&nbsp;</span><span>2023-10-9</span></div>
           </div>
           <div class="extra">
-            <button class="reds-button-new follow-button large primary follow-button">
-              <span class="reds-button-new-box"><span class="reds-button-new-text">回关</span></span>
+            <button aria-disabled="false" type="button" class="bg-[#2A82E4] w-24 h-10 text-white rounded-full" >
+              <span class="font-bold">关注</span>
             </button>
           </div>
         </div>
@@ -42,18 +42,18 @@
       <li class="agree-item">
         <a class="user-avatar">
           <!-- https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png -->
-          <img class="avatar-item" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg" />
+          <img class="avatar-item" src="https://img2.imgtp.com/2024/05/04/GCdcnmrW.jpg" />
         </a>
         <div class="main">
           <div class="info">
             <div class="user-info">
-              <a class>这是名词</a>
+              <a class>名字</a>
             </div>
-            <div class="interaction-hint"><span>开始关注您了&nbsp;</span><span>2021-10-9</span></div>
+            <div class="interaction-hint"><span>开始关注您了&nbsp;</span><span>2023-10-9</span></div>
           </div>
           <div class="extra">
-            <button class="reds-button-new follow-button large primary follow-button">
-              <span class="reds-button-new-box"><span class="reds-button-new-text">回关</span></span>
+            <button aria-disabled="false" type="button" class="bg-[#2A82E4] w-24 h-10 text-white rounded-full" >
+              <span class="font-bold">关注</span>
             </button>
           </div>
         </div>
@@ -61,7 +61,8 @@
     </ul>
   </div>
 </template>
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+</script>
 <style lang="less" scoped>
 textarea {
   overflow: auto;
