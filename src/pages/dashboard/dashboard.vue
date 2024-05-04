@@ -1,13 +1,13 @@
 <template>
-  <div class="feeds-page">
+  <div class="feeds-page ">
     <div class="channel-container">
       <div class="scroll-container channel-scroll-container">
         <div class="content-container">
           <div class="channel active">推荐</div>
-          <div class="channel">穿搭</div>
+          <div class="channel bg-black">穿搭</div>
           <div class="channel">美食</div>
           <div class="channel">彩妆</div>
-          <div class="channel">影视</div>
+          <div class="channel ">影视</div>
           <div class="channel">职场</div>
           <div class="channel">情感</div>
           <div class="channel">家居</div>

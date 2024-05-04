@@ -54,11 +54,6 @@ export const routes = [
             component: () => import("@/pages/message/children/comment.vue"),
             name: "comment", // 用于 keep-alive, 必须与SFC自动推导或者显示声明的组件name一致
           },
-          {
-            path: "/chat",
-            component: () => import("@/pages/chat/index.vue"),
-            name: "chat", // 用于 keep-alive, 必须与SFC自动推导或者显示声明的组件name一致
-          },
         ],
       },
       {
@@ -104,5 +99,7 @@ const router = createRouter({
 });
 router.beforeEach((to, from, next) => {
   next();
+  to;
+  from;
 });
 export default router;
