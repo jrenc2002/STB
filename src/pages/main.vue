@@ -1,345 +1,226 @@
 <template>
-  <div
-    class="note-detail-mask"
-    style="transition: background-color 0.4s ease 0s;
+    <div
+            class="note-detail-mask"
+            style="transition: background-color 0.4s ease 0s;
   hsla(0,0%,100%,0.98)"
-  >
-    <div class="note-container">
-      <div class="media-container">
-        <el-carousel height="90vh">
-          <el-carousel-item v-for="item in 4" :key="item">
-            <el-image
-              style="width: 100%; height: 100%"
-              src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg"
-              fit="cover"
-            />
-          </el-carousel-item>
-        </el-carousel>
-      </div>
-
-      <div class="interaction-container">
-        <div class="author-container">
-          <div class="author-me">
-            <div class="info">
-              <img
-                class="avatar-item"
-                style="width: 40px; height: 40px"
-                src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg"
-              />
-              <span class="name">这是名字</span>
+    >
+        <div class="note-container">
+            <div class="media-container">
+                <el-carousel height="90vh">
+                    <el-carousel-item v-for="item in 4" :key="item">
+                        <el-image
+                                fit="cover"
+                                src="https://img2.imgtp.com/2024/05/04/mdm1Npos.jpg"
+                                style="width: 100%; height: 100%"
+                        />
+                    </el-carousel-item>
+                </el-carousel>
             </div>
-            <div class="follow-btn">
-              <el-button type="danger" size="large" round>关注</el-button>
-            </div>
-          </div>
-
-          <div class="note-scroller">
-            <div class="note-content">
-              <div class="title">这是什么动漫</div>
-              <div class="desc">
-                <span>这是什么描述信息 <br /></span>
-                <a class="tag tag-search">#海贼王</a>
-                <a class="tag tag-search">#海贼王</a>
-                <a class="tag tag-search">#海贼王</a>
-              </div>
-              <div class="bottom-container">
-                <span class="date">2023-10-21</span>
-              </div>
-            </div>
-            <div class="divider interaction-divider"></div>
-
-            <!-- 评论 -->
-
-            <div class="comments-el">
-              <div class="comments-container">
-                <div class="total">共63条评论</div>
-                <div class="list-container">
-                  <div class="parent-comment">
-                    <div class="comment-item">
-                      <div class="comment-inner-container">
-                        <div class="avatar">
-                          <img
-                            class="avatar-item"
-                            src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg"
-                          />
+            
+            <div class="interaction-container">
+                <div class="author-container">
+                    <div class="author-me">
+                        <div class="info">
+                            <img
+                                    class="avatar-item"
+                                    src="https://img2.imgtp.com/2024/05/04/LIkpkkw1.jpg"
+                                    style="width: 40px; height: 40px"
+                            />
+                            <span class="name">名字</span>
                         </div>
-                        <div class="right">
-                          <div class="author-wrapper">
-                            <div class="author"><a class="name">用户已注销</a></div>
-                          </div>
-                          <div class="content">内容</div>
-
-                          <div class="info">
-                            <div class="date"><span>昨天 16:49</span></div>
-                            <div class="interactions">
-                              <div class="like">
+                      <button aria-disabled="false" type="button" class="bg-[#2A82E4] w-16 h-10 text-white opacity-70 rounded-full" ><!--v-if--><span class="">关注</span></button>
+                    </div>
+                    
+                    <div class="note-scroller">
+                        <div class="note-content">
+                            <div class="title">小猫</div>
+                            <div class="desc">
+                                <span>喵喵喵 <br/></span>
+                                <a class="tag tag-search">#宠物</a>
+                            </div>
+                            <div class="bottom-container">
+                                <span class="date">2024-10-21</span>
+                            </div>
+                        </div>
+                        <div class="divider interaction-divider"></div>
+                        
+                        <!-- 评论 -->
+                        
+                        <div class="comments-el">
+                            <div class="comments-container">
+                                <div class="total">共63条评论</div>
+                                <div class="list-container">
+                                    <div class="parent-comment">
+                                        <div class="comment-item">
+                                            <div class="comment-inner-container">
+                                                <div class="avatar">
+                                                    <img
+                                                            class="avatar-item"
+                                                            src="https://img2.imgtp.com/2024/05/04/UrqunCaV.jpg"
+                                                    />
+                                                </div>
+                                                <div class="right">
+                                                    <div class="author-wrapper">
+                                                        <div class="author"><a class="name">用户</a></div>
+                                                    </div>
+                                                    <div class="content">内容</div>
+                                                    
+                                                    <div class="info">
+                                                        <div class="date"><span>昨天 16:49</span></div>
+                                                        <div class="interactions">
+                                                            <div class="like">
                                 <span class="like-wrapper">
-                                  <Star style="width: 1em; height: 1em" />
+                                  <Star style="width: 1em; height: 1em"/>
                                   <span class="count">247</span>
                                 </span>
-                              </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reply-container">
+                                            <div class="list-container">
+                                                <div class="comment-item">
+                                                    <div class="comment-inner-container">
+                                                        <div class="avatar">
+                                                            <img
+                                                                    class="avatar-item"
+                                                                    src="https://img2.imgtp.com/2024/05/04/GCdcnmrW.jpg"
+                                                            />
+                                                        </div>
+                                                        <div class="right">
+                                                            <div class="author-wrapper">
+                                                                <div class="author"><a class="name">用户</a></div>
+                                                            </div>
+                                                            <div class="content">内容</div>
+                                                            
+                                                            <div class="info">
+                                                                <div class="date"><span>昨天 16:49</span></div>
+                                                                <div class="interactions">
+                                                                    <div class="like">
+                                    <span class="like-wrapper">
+                                      <Star style="width: 1em; height: 1em"/>
+                                      <span class="count">247</span>
+                                    </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-item">
+                                                    <div class="comment-inner-container">
+                                                        <div class="avatar">
+                                                            <img
+                                                                    class="avatar-item"
+                                                                    src="https://img2.imgtp.com/2024/05/04/GCdcnmrW.jpg"
+                                                            />
+                                                        </div>
+                                                        <div class="right">
+                                                            <div class="author-wrapper">
+                                                                <div class="author"><a class="name">用户</a></div>
+                                                            </div>
+                                                            <div class="content">内容</div>
+                                                            
+                                                            <div class="info">
+                                                                <div class="date"><span>昨天 16:49</span></div>
+                                                                <div class="interactions">
+                                                                    <div class="like">
+                                    <span class="like-wrapper">
+                                      <Star style="width: 1em; height: 1em"/>
+                                      <span class="count">247</span>
+                                    </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-item">
+                                                    <div class="comment-inner-container">
+                                                        <div class="avatar">
+                                                            <img
+                                                                    class="avatar-item"
+                                                                    src="https://img2.imgtp.com/2024/05/04/GCdcnmrW.jpg"
+                                                            />
+                                                        </div>
+                                                        <div class="right">
+                                                            <div class="author-wrapper">
+                                                                <div class="author"><a class="name">用户</a></div>
+                                                            </div>
+                                                            <div class="content">内容</div>
+                                                            
+                                                            <div class="info">
+                                                                <div class="date"><span>昨天 16:49</span></div>
+                                                                <div class="interactions">
+                                                                    <div class="like">
+                                    <span class="like-wrapper">
+                                      <Star style="width: 1em; height: 1em"/>
+                                      <span class="count">247</span>
+                                    </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="show-more">展开更多的回复</div>
+                                        </div>
+                                    </div>
+
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
+
+                        <!--  -->
                     </div>
-                    <div class="reply-container">
-                      <div class="list-container">
-                        <div class="comment-item">
-                          <div class="comment-inner-container">
-                            <div class="avatar">
-                              <img
-                                class="avatar-item"
-                                src="https://fuss10.elemecdn.com/1/34/19aa98b1fcb2781c4fba33d850549jpeg.jpeg"
-                              />
-                            </div>
-                            <div class="right">
-                              <div class="author-wrapper">
-                                <div class="author"><a class="name">用户已注销</a></div>
-                              </div>
-                              <div class="content">内容</div>
 
-                              <div class="info">
-                                <div class="date"><span>昨天 16:49</span></div>
-                                <div class="interactions">
-                                  <div class="like">
-                                    <span class="like-wrapper">
-                                      <Star style="width: 1em; height: 1em" />
-                                      <span class="count">247</span>
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="comment-item">
-                          <div class="comment-inner-container">
-                            <div class="avatar">
-                              <img
-                                class="avatar-item"
-                                src="https://fuss10.elemecdn.com/1/34/19aa98b1fcb2781c4fba33d850549jpeg.jpeg"
-                              />
-                            </div>
-                            <div class="right">
-                              <div class="author-wrapper">
-                                <div class="author"><a class="name">用户已注销</a></div>
-                              </div>
-                              <div class="content">内容</div>
-
-                              <div class="info">
-                                <div class="date"><span>昨天 16:49</span></div>
-                                <div class="interactions">
-                                  <div class="like">
-                                    <span class="like-wrapper">
-                                      <Star style="width: 1em; height: 1em" />
-                                      <span class="count">247</span>
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="comment-item">
-                          <div class="comment-inner-container">
-                            <div class="avatar">
-                              <img
-                                class="avatar-item"
-                                src="https://fuss10.elemecdn.com/0/6f/e35ff375812e6b0020b6b4e8f9583jpeg.jpeg"
-                              />
-                            </div>
-                            <div class="right">
-                              <div class="author-wrapper">
-                                <div class="author"><a class="name">用户已注销</a></div>
-                              </div>
-                              <div class="content">内容</div>
-
-                              <div class="info">
-                                <div class="date"><span>昨天 16:49</span></div>
-                                <div class="interactions">
-                                  <div class="like">
-                                    <span class="like-wrapper">
-                                      <Star style="width: 1em; height: 1em" />
-                                      <span class="count">247</span>
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="show-more">展开更多的回复</div>
-                    </div>
-                  </div>
-                  <div class="parent-comment">
-                    <div class="comment-item">
-                      <div class="comment-inner-container">
-                        <div class="avatar">
-                          <img
-                            class="avatar-item"
-                            src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg"
-                          />
-                        </div>
-                        <div class="right">
-                          <div class="author-wrapper">
-                            <div class="author"><a class="name">用户已注销</a></div>
-                          </div>
-                          <div class="content">内容</div>
-
-                          <div class="info">
-                            <div class="date"><span>昨天 16:49</span></div>
-                            <div class="interactions">
-                              <div class="like">
-                                <span class="like-wrapper">
-                                  <span class="count">247</span>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="reply-container">
-                      <div class="list-container">
-                        <div class="comment-item">
-                          <div class="comment-inner-container">
-                            <div class="avatar">
-                              <img
-                                class="avatar-item"
-                                src="https://fuss10.elemecdn.com/1/34/19aa98b1fcb2781c4fba33d850549jpeg.jpeg"
-                              />
-                            </div>
-                            <div class="right">
-                              <div class="author-wrapper">
-                                <div class="author"><a class="name">用户已注销</a></div>
-                              </div>
-                              <div class="content">内容</div>
-
-                              <div class="info">
-                                <div class="date"><span>昨天 16:49</span></div>
-                                <div class="interactions">
-                                  <div class="like">
-                                    <span class="like-wrapper">
-                                      <span class="count">247</span>
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="comment-item">
-                          <div class="comment-inner-container">
-                            <div class="avatar">
-                              <img
-                                class="avatar-item"
-                                src="https://fuss10.elemecdn.com/1/34/19aa98b1fcb2781c4fba33d850549jpeg.jpeg"
-                              />
-                            </div>
-                            <div class="right">
-                              <div class="author-wrapper">
-                                <div class="author"><a class="name">用户已注销</a></div>
-                              </div>
-                              <div class="content">内容</div>
-
-                              <div class="info">
-                                <div class="date"><span>昨天 16:49</span></div>
-                                <div class="interactions">
-                                  <div class="like">
-                                    <span class="like-wrapper">
-                                      <span class="count">247</span>
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="comment-item">
-                          <div class="comment-inner-container">
-                            <div class="avatar">
-                              <img
-                                class="avatar-item"
-                                src="https://fuss10.elemecdn.com/0/6f/e35ff375812e6b0020b6b4e8f9583jpeg.jpeg"
-                              />
-                            </div>
-                            <div class="right">
-                              <div class="author-wrapper">
-                                <div class="author"><a class="name">用户已注销</a></div>
-                              </div>
-                              <div class="content">内容</div>
-
-                              <div class="info">
-                                <div class="date"><span>昨天 16:49</span></div>
-                                <div class="interactions">
-                                  <div class="like">
-                                    <span class="like-wrapper">
-                                      <span class="count">247</span>
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="show-more">展开更多的回复</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--  -->
-          </div>
-
-          <div class="interactions-footer">
-            <div class="buttons">
-              <div class="left">
+                    <div class="interactions-footer">
+                        <div class="buttons">
+                            <div class="left">
                 <span class="like-wrapper"
-                  ><span class="like-lottie"> <Star style="width: 0.8em; height: 0.8em; color: #333" /> </span
-                  ><span class="count">46</span></span
+                ><span class="like-lottie"> <Star style="width: 0.8em; height: 0.8em; color: #333"/> </span
+                ><span class="count">46</span></span
                 >
-                <span class="collect-wrapper">
-                  <span class="like-lottie"> <PictureRounded style="width: 0.8em; height: 0.8em; color: #333" /> </span
+                                <span class="collect-wrapper">
+                  <span class="like-lottie"> <PictureRounded style="width: 0.8em; height: 0.8em; color: #333"/> </span
                   ><span class="count">21</span></span
-                >
-                <span class="chat-wrapper">
-                  <span class="like-lottie"> <ChatRound style="width: 0.8em; height: 0.8em; color: #333" /> </span
+                                >
+                                <span class="chat-wrapper">
+                  <span class="like-lottie"> <ChatRound style="width: 0.8em; height: 0.8em; color: #333"/> </span
                   ><span class="count">22</span></span
-                >
-              </div>
-              <div class="share-wrapper"></div>
-            </div>
-            <div class="comment-wrapper active comment-comp">
-              <div class="input-wrapper">
-                <input class="comment-input" type="text" placeholder="回复内容" />
-                <div class="input-buttons">
-                  <Close style="width: 1.2em; height: 1.2em" />
+                                >
+                            </div>
+                            <div class="share-wrapper"></div>
+                        </div>
+                        <div class="comment-wrapper active comment-comp">
+                            <div class="input-wrapper">
+                                <input class="comment-input" placeholder="回复内容" type="text"/>
+                                <div class="input-buttons">
+                                    <Close style="width: 1.2em; height: 1.2em"/>
+                                </div>
+                            </div>
+                            <button class="submit">发送</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <button class="submit">发送</button>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="close-cricle">
-      <div class="close close-mask-white">
-        <Close style="width: 1.2em; height: 1.2em; color: rgba(51, 51, 51, 0.8)" />
-      </div>
-    </div>
-  </div>
+        <div class="close-cricle">
+            <div class="close close-mask-white">
+                <Close style="width: 1.2em; height: 1.2em; color: rgba(51, 51, 51, 0.8)"/>
+            </div>
+        </div>
+
 </template>
 
 <script lang="ts" setup>
-import { Close, Star, PictureRounded, ChatRound } from "@element-plus/icons-vue";
-</script>
+import {ChatRound, Close, PictureRounded, Star} from "@element-plus/icons-vue";</script>
 
 <style lang="less" scoped>
 .note-detail-mask {
@@ -361,9 +242,8 @@ import { Close, Star, PictureRounded, ChatRound } from "@element-plus/icons-vue"
     cursor: pointer;
 
     .close-mask-white {
-      box-shadow:
-        0 2px 8px 0 rgba(0, 0, 0, 0.04),
-        0 1px 2px 0 rgba(0, 0, 0, 0.02);
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04),
+      0 1px 2px 0 rgba(0, 0, 0, 0.02);
       border: 1px solid rgba(0, 0, 0, 0.08);
     }
 
@@ -382,18 +262,15 @@ import { Close, Star, PictureRounded, ChatRound } from "@element-plus/icons-vue"
 
   .note-container {
     width: 86%;
-
     height: 90%;
-    transition:
-      transform 0.4s ease 0s,
-      width 0.4s ease 0s;
+    transition: transform 0.4s ease 0s,
+    width 0.4s ease 0s;
     transform: translate(104px, 32px) scale(1);
     overflow: visible;
 
     display: flex;
-    box-shadow:
-      0 8px 64px 0 rgba(0, 0, 0, 0.04),
-      0 1px 4px 0 rgba(0, 0, 0, 0.02);
+    box-shadow: 0 8px 64px 0 rgba(0, 0, 0, 0.04),
+    0 1px 4px 0 rgba(0, 0, 0, 0.02);
     border-radius: 20px;
     background: #895454;
     transform-origin: left top;
@@ -519,6 +396,7 @@ import { Close, Star, PictureRounded, ChatRound } from "@element-plus/icons-vue"
         .interaction-divider {
           margin: 0 24px;
         }
+
         .divider {
           margin: 4px 8px;
           list-style: none;
@@ -589,6 +467,7 @@ import { Close, Star, PictureRounded, ChatRound } from "@element-plus/icons-vue"
                         .author {
                           display: flex;
                           align-items: center;
+
                           .name {
                             color: rgba(51, 51, 51, 0.6);
                             line-height: 18px;
@@ -613,6 +492,7 @@ import { Close, Star, PictureRounded, ChatRound } from "@element-plus/icons-vue"
                         .date {
                           margin: 8px 0;
                         }
+
                         .interactions {
                           display: flex;
                           margin-left: -2px;
@@ -687,6 +567,7 @@ import { Close, Star, PictureRounded, ChatRound } from "@element-plus/icons-vue"
 
           .left {
             display: flex;
+
             .like-wrapper {
               position: relative;
               cursor: pointer;
@@ -695,6 +576,7 @@ import { Close, Star, PictureRounded, ChatRound } from "@element-plus/icons-vue"
               color: rgba(51, 51, 51, 0.6);
               margin-right: 5px;
               align-items: center;
+
               .like-lottie {
                 transform: scale(1.7);
               }
@@ -707,6 +589,7 @@ import { Close, Star, PictureRounded, ChatRound } from "@element-plus/icons-vue"
               color: rgba(51, 51, 51, 0.6);
               margin-right: 5px;
               align-items: center;
+
               .like-lottie {
                 transform: scale(1.7);
               }
@@ -717,6 +600,7 @@ import { Close, Star, PictureRounded, ChatRound } from "@element-plus/icons-vue"
               color: rgba(51, 51, 51, 0.6);
               display: flex;
               align-items: center;
+
               .like-lottie {
                 transform: scale(1.7);
               }
